@@ -2,15 +2,21 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const HomePageTemplate = ({
-  title,
+  heading,
+  subheading_part1,
+  subheading_part2,
 }) => (
   <div>
-    <h1 className='title'>{title}</h1>
+    <h1 className='title'>{heading}</h1>
+    <p className='subheading_part1'>
+      {subheading_part1}
+      <span className='subheading_part2'>{' ' + subheading_part2}</span>
+    </p>
   </div>
 )
 
 HomePageTemplate.propTypes = {
-  title: PropTypes.string,
+  heading: PropTypes.string,
 }
 
 export default HomePageTemplate
