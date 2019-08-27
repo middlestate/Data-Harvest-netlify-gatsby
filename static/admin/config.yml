@@ -18,7 +18,9 @@ collections:
           - {label: Heading, name: heading, widget: string}
           - {label: Subheading Part 1, name: subheading_part1, widget: string}
           - {label: Subheading Part 2, name: subheading_part2, widget: string}
-
+          - {label: Avocado Heading, name: avocado_heading, widget: string}
+          - {label: Avocado Subheading, name: avocado_subheading, widget: string}
+          - {label: Avocado Description, name: avocado_description, widget: text}
 
 
 

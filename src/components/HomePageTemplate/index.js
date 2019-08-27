@@ -5,6 +5,9 @@ const HomePageTemplate = ({
   heading,
   subheading_part1,
   subheading_part2,
+  avocado_heading,
+  avocado_subheading,
+  avocado_description,
 }) => (
   <div>
     <section className='hero section'>
@@ -17,6 +20,11 @@ const HomePageTemplate = ({
       </div>
     </section>
     <section className='hero-block section' />
+    <section className='avocado section'>
+      <h1>{avocado_heading}</h1>
+      <h2>{avocado_subheading}</h2>
+      <p>{avocado_description}</p>
+    </section>
   </div>
 )
 

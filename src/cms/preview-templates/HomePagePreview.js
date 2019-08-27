@@ -8,6 +8,9 @@ const HomePagePreview = ({ entry, getAsset }) => {
       heading={entry.getIn(['data', 'heading'])}
       subheading_part1={entry.getIn(['data', 'subheading_part1'])}
       subheading_part2={entry.getIn(['data', 'subheading_part2'])}
+      avocado_heading={entry.getIn(['data', 'avocado_heading'])}
+      avocado_subheading={entry.getIn(['data', 'avocado_subheading'])}
+      avocado_description={entry.getIn(['data', 'avocado_description'])}
     />
   )
 }
