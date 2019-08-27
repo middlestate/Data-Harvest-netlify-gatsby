@@ -7,7 +7,7 @@ const HomePageTemplate = ({
   subheading_part2,
 }) => (
   <div>
-    <section className='section'>
+    <section className='hero section'>
       <div className='container'>
         <h1 className='title'>{heading}</h1>
         <p className='subheading_part1'>
@@ -16,6 +16,7 @@ const HomePageTemplate = ({
         </p>
       </div>
     </section>
+    <section className='hero-block section' />
   </div>
 )
 
