@@ -15,7 +15,7 @@ collections:
         name: "home"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "home-page"}
-          - {label: Heading, name: heading, widget: string}
+          - {label: Header Title Image, name: header_title_image, widget: image}
           - {label: Subheading Part 1, name: subheading_part1, widget: string}
           - {label: Subheading Part 2, name: subheading_part2, widget: string}
           - {label: Avocado Heading, name: avocado_heading, widget: string}

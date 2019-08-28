@@ -10,7 +10,7 @@ const HomePage = ({data}) => {
   return (
     <Layout>
       <HomePageTemplate
-        heading={frontmatter.heading}
+        header_title_image={frontmatter.header_title_image}
         subheading_part1={frontmatter.subheading_part1}
         subheading_part2={frontmatter.subheading_part2}
         avocado_heading={frontmatter.heading}
@@ -44,7 +44,7 @@ export const pageQuery = graphql`
   query IndexPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
-        heading
+        header_title_image
         subheading_part1
         subheading_part2
         avocado_heading

@@ -5,7 +5,7 @@ import HomePageTemplate from '../../components/HomePageTemplate'
 const HomePagePreview = ({ entry, getAsset }) => {
   return (
     <HomePageTemplate
-      heading={entry.getIn(['data', 'heading'])}
+      header_title_image={entry.getIn(['data', 'header_title_image'])}
       subheading_part1={entry.getIn(['data', 'subheading_part1'])}
       subheading_part2={entry.getIn(['data', 'subheading_part2'])}
       avocado_heading={entry.getIn(['data', 'avocado_heading'])}
