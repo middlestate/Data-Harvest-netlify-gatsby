@@ -66,7 +66,7 @@ const HomePageTemplate = ({
       <div className='container'>
         <div className='columns'>
           <div className='column'>
-            <img src={spotlight_image} alt='avocado' />
+            <img src={spotlight_image} className='spotlight_image' alt='avocado' />
           </div>
           <div className='column'>
             <h1>{spotlight_heading}</h1>

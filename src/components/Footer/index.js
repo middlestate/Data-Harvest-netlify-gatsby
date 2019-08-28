@@ -10,7 +10,7 @@ const Footer = () => {
             <p>Blockchain for the food supply chain realized.</p>
           </div>
           <div className='column'>
-            <p>(DataHarvest logo - large)</p>
+            <img src='/img/dataharvest_logo_white_large.png' alt='DataHarvest Large Logo' />
           </div>
           <div className='column'>
             <p>(Social Media icons)</p>
