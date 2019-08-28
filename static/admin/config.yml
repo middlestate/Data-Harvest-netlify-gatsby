@@ -22,7 +22,10 @@ collections:
           - {label: Avocado Subheading, name: avocado_subheading, widget: string}
           - {label: Avocado Description, name: avocado_description, widget: text}
           - {label: Avocado Image, name: avocado_image, widget: image}
-
+          - {label: Affiliate Image, name: intel_image, widget: image}
+          - {label: Affiliate Image, name: hyperledger_image, widget: image}
+          - {label: Affiliate Image, name: IBM_image, widget: image}
+          - {label: Affiliate Image, name: linux_image, widget: image}
 
 
       - file: "src/pages/about/index.md"

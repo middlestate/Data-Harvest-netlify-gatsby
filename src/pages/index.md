@@ -7,4 +7,8 @@ avocado_heading: The Avocado Opportunity
 avocado_subheading: A purpose built network of collaborators in the avocado ecosystem have come together for one purpose
 avocado_description: The DataHarvest Project is working with leaders in Avocados, from UC Riverside’s Avocado Improvement Program (AVIP) to major fruit distributor GreenYard. We have also brought in new innovators like Most’s real-time sensors and modern farm networking into the fold. 
 avocado_image: /img/avocado.png
+intel_image: /img/intel.png
+hyperledger_image: /img/hyperledger.png
+IBM_image: /img/ibm.png
+linux_image: /img/linux.png
 ---

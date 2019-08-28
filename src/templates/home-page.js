@@ -17,6 +17,10 @@ const HomePage = ({data}) => {
         avocado_subheading={frontmatter.avocado_subheading}
         avocado_description={frontmatter.avocado_description}
         avocado_image={frontmatter.avocado_image}
+        intel_image={frontmatter.intel_image}
+        hyperledger_image={frontmatter.hyperledger_image}
+        IBM_image={frontmatter.IBM_image}
+        linux_image={frontmatter.linux_image}
       />
     </Layout>
   )
@@ -43,6 +47,10 @@ export const pageQuery = graphql`
         avocado_subheading
         avocado_description
         avocado_image
+        intel_image
+        hyperledger_image
+        IBM_image
+        linux_image
       }
     }
   }

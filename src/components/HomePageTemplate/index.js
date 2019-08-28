@@ -9,6 +9,10 @@ const HomePageTemplate = ({
   avocado_subheading,
   avocado_description,
   avocado_image,
+  intel_image,
+  hyperledger_image,
+  IBM_image,
+  linux_image,
 }) => (
   <div>
     <section className='hero section'>
@@ -32,6 +36,24 @@ const HomePageTemplate = ({
           </div>
           <div className='column'>
             <img src={avocado_image} alt='avocado' />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section className='affiliates section'>
+      <div className='container'>
+        <div className='columns'>
+          <div className='column'>
+            <img src={intel_image} alt='intel' />
+          </div>
+          <div className='column'>
+            <img src={hyperledger_image} alt='hyperledger' />
+          </div>
+          <div className='column'>
+            <img src={IBM_image} alt='IBM' />
+          </div>
+          <div className='column'>
+            <img src={linux_image} alt='linux' />
           </div>
         </div>
       </div>
