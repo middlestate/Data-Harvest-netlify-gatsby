@@ -13,6 +13,7 @@ const HomePageTemplate = ({
   hyperledger_image,
   IBM_image,
   linux_image,
+  spotlight_image,
 }) => (
   <div>
     <section className='hero section'>
@@ -54,6 +55,21 @@ const HomePageTemplate = ({
           </div>
           <div className='column has-text-centered'>
             <img src={linux_image} alt='linux' />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section className='spotlight section'>
+      <div className='container'>
+        <div className='columns'>
+          <div className='column'>
+            <img src={spotlight_image} alt='avocado' />
+          </div>
+          <div className='column'>
+            <h1>{avocado_heading}</h1>
+            <h2>{avocado_subheading}</h2>
+            <p>{avocado_description}</p>
+            <button>DataHarvest Project</button>
           </div>
         </div>
       </div>

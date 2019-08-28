@@ -11,4 +11,5 @@ intel_image: /img/intel.png
 hyperledger_image: /img/hyperledger.png
 IBM_image: /img/ibm.png
 linux_image: /img/linux.png
+spotlight_image: /img/avocado_tree.png
 ---

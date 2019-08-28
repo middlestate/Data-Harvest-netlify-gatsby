@@ -16,6 +16,7 @@ const HomePagePreview = ({ entry, getAsset }) => {
       hyperledger_image={entry.getIn(['data', 'hyperledger_image'])}
       IBM_image={entry.getIn(['data', 'IBM_image'])}
       linux_image={entry.getIn(['data', 'linux_image'])}
+      spotlight_image={entry.getIn(['data', 'spotlight_image'])}
     />
   )
 }

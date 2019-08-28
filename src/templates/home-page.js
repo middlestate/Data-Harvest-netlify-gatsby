@@ -21,6 +21,7 @@ const HomePage = ({data}) => {
         hyperledger_image={frontmatter.hyperledger_image}
         IBM_image={frontmatter.IBM_image}
         linux_image={frontmatter.linux_image}
+        spotlight_image={frontmatter.spotlight_image}
       />
     </Layout>
   )
@@ -51,6 +52,7 @@ export const pageQuery = graphql`
         hyperledger_image
         IBM_image
         linux_image
+        spotlight_image
       }
     }
   }
