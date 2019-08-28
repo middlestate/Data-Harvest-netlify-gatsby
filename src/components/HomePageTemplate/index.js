@@ -1,5 +1,5 @@
 import React from 'react'
-// import PropTypes from 'prop-types'
+import PropTypes from 'prop-types'
 
 const HomePageTemplate = ({
   header_title_image,
@@ -85,8 +85,8 @@ const HomePageTemplate = ({
   </div>
 )
 
-// HomePageTemplate.propTypes = {
-//   heading: PropTypes.string,
-// }
+HomePageTemplate.propTypes = {
+  avocado_heading: PropTypes.string,
+}
 
 export default HomePageTemplate

@@ -13,7 +13,7 @@ const HomePage = ({data}) => {
         header_title_image={frontmatter.header_title_image}
         subheading_part1={frontmatter.subheading_part1}
         subheading_part2={frontmatter.subheading_part2}
-        avocado_heading={frontmatter.heading}
+        avocado_heading={frontmatter.avocado_heading}
         avocado_subheading={frontmatter.avocado_subheading}
         avocado_description={frontmatter.avocado_description}
         avocado_image={frontmatter.avocado_image}
