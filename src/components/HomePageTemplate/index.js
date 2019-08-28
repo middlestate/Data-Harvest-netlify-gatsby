@@ -26,7 +26,7 @@ const HomePageTemplate = ({
             <img src={header_title_image} className='header_title_image' alt='header_title_image' />
             <p className='subheading_part1'>
               {subheading_part1}
-              <span className='subheading_part2'>{' ' + subheading_part2}</span>
+              <strong className='subheading_part2'>{' ' + subheading_part2}</strong>
             </p>
           </div>
           <div className='column' />
