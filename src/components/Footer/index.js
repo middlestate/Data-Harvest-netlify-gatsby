@@ -1,15 +1,20 @@
 import React from 'react'
-import config from '../../../config'
+// import config from '../../../config'
 
 const Footer = () => {
   return (
     <footer className='footer'>
       <div className='container'>
-        <div className='content has-text-centered'>
-          <p>
-            {config.copyright}
-          </p>
-          <p>Powered by <a href='https://www.gatsbyjs.org'>Gatsby</a> and <a href='https://www.netlifycms.org'>Netlify CMS</a> | <a href='https://github.com/v4iv/gatsby-starter-business'>Github Repository</a></p>
+        <div className='columns'>
+          <div className='column'>
+            <p>Blockchain for the food supply chain realized.</p>
+          </div>
+          <div className='column'>
+            <p>(DataHarvest logo - large)</p>
+          </div>
+          <div className='column'>
+            <p>(Social Media icons)</p>
+          </div>
         </div>
       </div>
     </footer>
