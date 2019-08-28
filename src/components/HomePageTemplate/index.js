@@ -25,6 +25,7 @@ const HomePageTemplate = ({
       <h1>{avocado_heading}</h1>
       <h2>{avocado_subheading}</h2>
       <p>{avocado_description}</p>
+      <button>DataHarvest Project</button>
       <img src={avocado_image} alt='avocado' />
     </section>
   </div>
