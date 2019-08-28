@@ -20,6 +20,9 @@ const HomePageTemplate = ({
 }) => (
   <div>
     <section className='hero section'>
+      <video className='VideoTag' autoPlay loop muted>
+        <source src='https://vimeo.com/user86900467/review/356497375/5a49e6026a' type='video/mp4' />
+      </video>
       <div className='container'>
         <div className='columns'>
           <div className='column'>
