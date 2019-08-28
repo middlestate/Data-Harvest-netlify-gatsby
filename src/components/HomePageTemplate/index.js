@@ -42,17 +42,17 @@ const HomePageTemplate = ({
     </section>
     <section className='affiliates section'>
       <div className='container'>
-        <div className='columns'>
-          <div className='column'>
+        <div className='columns is-centered'>
+          <div className='column has-text-centered'>
             <img src={intel_image} alt='intel' />
           </div>
-          <div className='column'>
+          <div className='column has-text-centered'>
             <img src={hyperledger_image} alt='hyperledger' />
           </div>
-          <div className='column'>
+          <div className='column has-text-centered'>
             <img src={IBM_image} alt='IBM' />
           </div>
-          <div className='column'>
+          <div className='column has-text-centered'>
             <img src={linux_image} alt='linux' />
           </div>
         </div>
