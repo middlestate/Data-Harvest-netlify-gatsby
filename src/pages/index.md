@@ -12,7 +12,7 @@ hyperledger_image: /img/hyperledger.png
 IBM_image: /img/ibm.png
 linux_image: /img/linux.png
 spotlight_image: /img/avocado_tree.png
-spotlight_heading: "DATAHARVEST SPOTLIGHT: ON THE FARM"
+spotlight_heading: "DataHarvest Spotlight: On The Farm"
 spotlight_subheading: Answering the question of ‘how?’ on the nursery
 spotlight_description: Collecting meaningful data from the nursery is critical to our project. We are working with partner nurseries and technology providers to implement best-in-industry network solutions that will be foundational as we expand what data we are capturing. Would you like to work with us, or do you have questions about our project?
 ---
