@@ -21,11 +21,16 @@ const HomePageTemplate = ({
   <div>
     <section className='hero section'>
       <div className='container'>
-        <img src={header_title_image} alt='header_title_image' />
-        <p className='subheading_part1'>
-          {subheading_part1}
-          <span className='subheading_part2'>{' ' + subheading_part2}</span>
-        </p>
+        <div className='columns'>
+          <div className='column'>
+            <img src={header_title_image} alt='header_title_image' />
+            <p className='subheading_part1'>
+              {subheading_part1}
+              <span className='subheading_part2'>{' ' + subheading_part2}</span>
+            </p>
+          </div>
+          <div className='column' />
+        </div>
       </div>
     </section>
     <section className='hero-block section' />
