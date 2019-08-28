@@ -8,6 +8,7 @@ const HomePageTemplate = ({
   avocado_heading,
   avocado_subheading,
   avocado_description,
+  avocado_image,
 }) => (
   <div>
     <section className='hero section'>
@@ -24,6 +25,7 @@ const HomePageTemplate = ({
       <h1>{avocado_heading}</h1>
       <h2>{avocado_subheading}</h2>
       <p>{avocado_description}</p>
+      <img src={avocado_image} alt='avocado' />
     </section>
   </div>
 )

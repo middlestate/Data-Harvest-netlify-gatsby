@@ -21,7 +21,7 @@ collections:
           - {label: Avocado Heading, name: avocado_heading, widget: string}
           - {label: Avocado Subheading, name: avocado_subheading, widget: string}
           - {label: Avocado Description, name: avocado_description, widget: text}
-
+          - {label: Avocado Image, name: avocado_image, widget: image}
 
 
 

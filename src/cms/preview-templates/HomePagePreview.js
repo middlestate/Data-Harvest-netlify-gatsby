@@ -11,6 +11,7 @@ const HomePagePreview = ({ entry, getAsset }) => {
       avocado_heading={entry.getIn(['data', 'avocado_heading'])}
       avocado_subheading={entry.getIn(['data', 'avocado_subheading'])}
       avocado_description={entry.getIn(['data', 'avocado_description'])}
+      avocado_image={entry.getIn(['data', 'avocado_image'])}
     />
   )
 }
