@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+// import PropTypes from 'prop-types'
 
 const HomePageTemplate = ({
   header_title_image,
@@ -23,7 +23,7 @@ const HomePageTemplate = ({
       <div className='container'>
         <div className='columns'>
           <div className='column'>
-            <img src={header_title_image} alt='header_title_image' />
+            <img src={header_title_image} className='header_title_image' alt='header_title_image' />
             <p className='subheading_part1'>
               {subheading_part1}
               <span className='subheading_part2'>{' ' + subheading_part2}</span>
