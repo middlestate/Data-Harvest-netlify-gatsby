@@ -22,6 +22,9 @@ const HomePage = ({data}) => {
         IBM_image={frontmatter.IBM_image}
         linux_image={frontmatter.linux_image}
         spotlight_image={frontmatter.spotlight_image}
+        spotlight_heading={frontmatter.spotlight_heading}
+        spotlight_subheading={frontmatter.spotlight_subheading}
+        spotlight_description={frontmatter.spotlight_description}
       />
     </Layout>
   )
@@ -53,6 +56,9 @@ export const pageQuery = graphql`
         IBM_image
         linux_image
         spotlight_image
+        spotlight_heading
+        spotlight_subheading
+        spotlight_description
       }
     }
   }

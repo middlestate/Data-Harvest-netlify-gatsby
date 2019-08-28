@@ -17,6 +17,9 @@ const HomePagePreview = ({ entry, getAsset }) => {
       IBM_image={entry.getIn(['data', 'IBM_image'])}
       linux_image={entry.getIn(['data', 'linux_image'])}
       spotlight_image={entry.getIn(['data', 'spotlight_image'])}
+      spotlight_heading={entry.getIn(['data', 'spotlight_heading'])}
+      spotlight_subheading={entry.getIn(['data', 'spotlight_subheading'])}
+      spotlight_description={entry.getIn(['data', 'spotlight_description'])}
     />
   )
 }

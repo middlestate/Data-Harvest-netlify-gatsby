@@ -14,6 +14,9 @@ const HomePageTemplate = ({
   IBM_image,
   linux_image,
   spotlight_image,
+  spotlight_heading,
+  spotlight_subheading,
+  spotlight_description,
 }) => (
   <div>
     <section className='hero section'>
@@ -66,10 +69,10 @@ const HomePageTemplate = ({
             <img src={spotlight_image} alt='avocado' />
           </div>
           <div className='column'>
-            <h1>{avocado_heading}</h1>
-            <h2>{avocado_subheading}</h2>
-            <p>{avocado_description}</p>
-            <button>DataHarvest Project</button>
+            <h1>{spotlight_heading}</h1>
+            <h2>{spotlight_subheading}</h2>
+            <p>{spotlight_description}</p>
+            <button>Talk to Us!</button>
           </div>
         </div>
       </div>
