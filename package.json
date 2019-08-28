@@ -14,6 +14,10 @@
     "clean": "rm -rf public/ .cache/"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.22",
+    "@fortawesome/free-brands-svg-icons": "^5.10.2",
+    "@fortawesome/free-solid-svg-icons": "^5.10.2",
+    "@fortawesome/react-fontawesome": "^0.1.4",
     "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "^2.2.1",
     "bulma": "^0.7.2",
     "gatsby": "^2.0.98",

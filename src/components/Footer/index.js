@@ -1,5 +1,7 @@
 import React from 'react'
 // import config from '../../../config'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebookF, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons'
 
 const Footer = () => {
   return (
@@ -12,8 +14,16 @@ const Footer = () => {
           <div className='column'>
             <img src='/img/dataharvest_logo_white_large.png' alt='DataHarvest Large Logo' />
           </div>
-          <div className='column'>
-            <p>(Social Media icons)</p>
+          <div className='social_media column'>
+            <a href='https://www.facebook.com/DataHarvest.co/'>
+              <FontAwesomeIcon icon={faFacebookF} className='fontawesome_icon' size='2x' />
+            </a>
+            <a href='https://www.linkedin.com/company/dataharvest.co/'>
+              <FontAwesomeIcon icon={faLinkedinIn} className='fontawesome_icon' size='2x' />
+            </a>
+            <a href='https://twitter.com/dataharvest'>
+              <FontAwesomeIcon icon={faTwitter} className='fontawesome_icon' size='2x' />
+            </a>
           </div>
         </div>
       </div>
