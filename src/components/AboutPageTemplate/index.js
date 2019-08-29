@@ -6,6 +6,10 @@ const AboutPageTemplate = ({
   title,
   description,
   subheading,
+  member_1,
+  member_2,
+  member_3,
+  member_4,
 }) => {
   return (
     <section className='about section'>
@@ -18,6 +22,10 @@ const AboutPageTemplate = ({
             <h1>{title}</h1>
             <p>{description}</p>
             <h2>{subheading}</h2>
+            <h3>{member_1}</h3>
+            <h3>{member_2}</h3>
+            <h3>{member_3}</h3>
+            <h3>{member_4}</h3>
           </div>
         </div>
       </div>
@@ -30,6 +38,10 @@ AboutPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string,
   subheading: PropTypes.string,
+  member_1: PropTypes.string,
+  member_2: PropTypes.string,
+  member_3: PropTypes.string,
+  member_4: PropTypes.string,
 }
 
 export default AboutPageTemplate

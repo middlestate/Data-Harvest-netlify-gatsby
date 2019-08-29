@@ -14,6 +14,10 @@ const AboutPage = ({data}) => {
         title={frontmatter.title}
         description={frontmatter.description}
         subheading={frontmatter.subheading}
+        member_1={frontmatter.member_1}
+        member_2={frontmatter.member_2}
+        member_3={frontmatter.member_3}
+        member_4={frontmatter.member_4}
       />
     </Layout>
   )
@@ -37,6 +41,10 @@ export const aboutPageQuery = graphql`
         title
         description
         subheading
+        member_1
+        member_2
+        member_3
+        member_4
       }
     }
   }
