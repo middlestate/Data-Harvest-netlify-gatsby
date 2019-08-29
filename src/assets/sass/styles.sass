@@ -5,12 +5,15 @@ $primary-invert: #ffffff
 $hero-section-padding-large: 20.5rem 1.5rem
 $hero-block-section-padding-medium: 6rem 1.5rem
 
+@media only screen and (min-width: 600px)
+  .navbar
+    padding: 0 100px 0 100px    
+
 nav
   border-bottom: lightgray solid 0.1vmin
 
 .navbar
   background-color: black
-  padding: 0 100px 0 100px
   .navbar-item
     color: white
     font-size: 13px
@@ -189,11 +192,17 @@ nav
 
 /* About Page */
 .about
+  padding: 50px 0 11px 0
+  .container
+    margin-left: 0
+    max-width: fit-content
+    width: auto
   .column
     // padding: $section-padding-large
     height: 100vh
   .img-col
     background-color: gray
+    padding: 0
     img
       object-fit: cover
       width: 100%
