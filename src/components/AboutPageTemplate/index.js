@@ -27,7 +27,7 @@ const AboutPageTemplate = ({
             <h3>{member_2}</h3>
             <h3>{member_3}</h3>
             <h3>{member_4}</h3>
-            <h2>{button_heading}</h2>
+            <h2 className='button-heading'>{button_heading}</h2>
             <button>Contact Us</button>
           </div>
         </div>
