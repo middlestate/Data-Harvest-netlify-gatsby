@@ -12,6 +12,7 @@ const AboutPagePreview = ({ entry, widgetFor }) => (
     member_2={entry.getIn(['data', 'member_2'])}
     member_3={entry.getIn(['data', 'member_3'])}
     member_4={entry.getIn(['data', 'member_4'])}
+    button_heading={entry.getIn(['data', 'button_heading'])}
   />
 )
 

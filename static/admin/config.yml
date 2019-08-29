@@ -45,7 +45,7 @@ collections:
           - {label: "Team Member", name: member_2, widget: string}
           - {label: "Team Member", name: member_3, widget: string}
           - {label: "Team Member", name: member_4, widget: string}
-
+          - {label: "Button Heading", name: button_heading, widget: string}
 
 
       - file: "src/pages/pricing/index.md"

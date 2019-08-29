@@ -18,6 +18,7 @@ const AboutPage = ({data}) => {
         member_2={frontmatter.member_2}
         member_3={frontmatter.member_3}
         member_4={frontmatter.member_4}
+        button_heading={frontmatter.button_heading}
       />
     </Layout>
   )
@@ -45,6 +46,7 @@ export const aboutPageQuery = graphql`
         member_2
         member_3
         member_4
+        button_heading
       }
     }
   }

@@ -10,6 +10,7 @@ const AboutPageTemplate = ({
   member_2,
   member_3,
   member_4,
+  button_heading,
 }) => {
   return (
     <section className='about section'>
@@ -26,6 +27,8 @@ const AboutPageTemplate = ({
             <h3>{member_2}</h3>
             <h3>{member_3}</h3>
             <h3>{member_4}</h3>
+            <h2>{button_heading}</h2>
+            <button>Contact Us</button>
           </div>
         </div>
       </div>
@@ -42,6 +45,7 @@ AboutPageTemplate.propTypes = {
   member_2: PropTypes.string,
   member_3: PropTypes.string,
   member_4: PropTypes.string,
+  button_heading: PropTypes.string,
 }
 
 export default AboutPageTemplate
