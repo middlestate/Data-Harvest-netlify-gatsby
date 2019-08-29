@@ -37,10 +37,11 @@ collections:
         name: "about"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
+          - {label: About Image, name: about_image, widget: image}
           - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
-          - {label: "Meta Title", name: "meta_title", widget: "string"}
-          - {label: "Meta Description", name: "meta_description", widget: "text"}
+
+
+
       - file: "src/pages/pricing/index.md"
         label: "Pricing Page"
         name: "pricing"

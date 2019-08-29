@@ -4,10 +4,8 @@ import AboutPageTemplate from '../../components/AboutPageTemplate'
 
 const AboutPagePreview = ({ entry, widgetFor }) => (
   <AboutPageTemplate
+    about_image={entry.getIn(['data', 'about_image'])}
     title={entry.getIn(['data', 'title'])}
-    meta_title={entry.getIn(['data', 'meta_title'])}
-    meta_description={entry.getIn(['data', 'meta_description'])}
-    content={widgetFor('body')}
   />
 )
 
