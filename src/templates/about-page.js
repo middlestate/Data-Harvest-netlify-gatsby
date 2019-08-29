@@ -12,6 +12,7 @@ const AboutPage = ({data}) => {
       <AboutPageTemplate
         about_image={frontmatter.about_image}
         title={frontmatter.title}
+        description={frontmatter.description}
       />
     </Layout>
   )
@@ -33,6 +34,7 @@ export const aboutPageQuery = graphql`
       frontmatter {
         about_image
         title
+        description
       }
     }
   }
