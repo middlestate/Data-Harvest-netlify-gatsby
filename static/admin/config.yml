@@ -38,8 +38,9 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: About Image, name: about_image, widget: image}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Description", name: "description", widget: "text"}
+          - {label: "Title", name: "title", widget: string}
+          - {label: "Description", name: "description", widget: text}
+          - {label: "Subheading", name: "subheading", widget: string}
 
 
 

@@ -2,9 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const AboutPageTemplate = ({
-  about_image,  
+  about_image,
   title,
   description,
+  subheading,
 }) => {
   return (
     <section className='about section'>
@@ -16,6 +17,7 @@ const AboutPageTemplate = ({
           <div className='description-col column'>
             <h1>{title}</h1>
             <p>{description}</p>
+            <h2>{subheading}</h2>
           </div>
         </div>
       </div>
@@ -27,6 +29,7 @@ const AboutPageTemplate = ({
 AboutPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string,
+  subheading: PropTypes.string,
 }
 
 export default AboutPageTemplate
