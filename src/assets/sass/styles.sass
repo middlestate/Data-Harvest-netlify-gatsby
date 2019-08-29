@@ -5,10 +5,6 @@ $primary-invert: #ffffff
 $hero-section-padding-large: 20.5rem 1.5rem
 $hero-block-section-padding-medium: 6rem 1.5rem
 
-@media only screen and (min-width: 600px)
-  .navbar
-    padding: 0 100px 0 100px    
-
 nav
   border-bottom: lightgray solid 0.1vmin
 
@@ -199,7 +195,7 @@ nav
     width: auto
   .column
     // padding: $section-padding-large
-    height: 150vh
+    height: 175vh
   .img-col
     background-color: gray
     padding: 0
@@ -209,6 +205,8 @@ nav
       height: 100%
   .description-col
     padding: $section-padding-medium
+    padding-left: 50px
+    padding-right: 50px
     h1
       letter-spacing: 0px
       text-transform: none
@@ -257,3 +255,11 @@ nav
     button:hover
       cursor: pointer
       background-color: gray
+
+
+
+
+
+@media only screen and (min-width: 600px)
+  .navbar
+    padding: 0 100px 0 100px    
