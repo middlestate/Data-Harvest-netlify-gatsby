@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import {graphql} from 'gatsby'
 import HomePageTemplate from '../components/HomePageTemplate'
 import Layout from '../components/Layout'
+import Footer from '../components/Footer/index'
 
 const HomePage = ({data}) => {
   const {frontmatter} = data.markdownRemark
@@ -26,6 +27,7 @@ const HomePage = ({data}) => {
         spotlight_subheading={frontmatter.spotlight_subheading}
         spotlight_description={frontmatter.spotlight_description}
       />
+      <Footer footer_background_color={frontmatter.footer_background_color} />
     </Layout>
   )
 }
@@ -59,6 +61,7 @@ export const pageQuery = graphql`
         spotlight_heading
         spotlight_subheading
         spotlight_description
+        footer_background_color
       }
     }
   }

@@ -9,4 +9,5 @@ member_2: Ryan Clark
 member_3: Lorena Dominguez
 member_4: Felipe lllanes
 button_heading: Want to Chat?
+footer_background_color: '#606061'
 ---

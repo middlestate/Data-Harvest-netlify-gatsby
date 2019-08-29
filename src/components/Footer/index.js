@@ -3,9 +3,11 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons'
 
-const Footer = () => {
+const Footer = ({
+  footer_background_color,
+}) => {
   return (
-    <footer className='footer'>
+    <footer className='footer' style={{backgroundColor: footer_background_color}}>
       <div className='container'>
         <div className='columns'>
           <div className='column'>

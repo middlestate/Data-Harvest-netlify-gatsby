@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import AboutPageTemplate from '../components/AboutPageTemplate'
 import Layout from '../components/Layout'
+import Footer from '../components/Footer/index'
 
 const AboutPage = ({data}) => {
   const {frontmatter} = data.markdownRemark
@@ -20,6 +21,7 @@ const AboutPage = ({data}) => {
         member_4={frontmatter.member_4}
         button_heading={frontmatter.button_heading}
       />
+      <Footer footer_background_color={frontmatter.footer_background_color} />
     </Layout>
   )
 }
@@ -47,6 +49,7 @@ export const aboutPageQuery = graphql`
         member_3
         member_4
         button_heading
+        footer_background_color
       }
     }
   }
