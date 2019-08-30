@@ -11,6 +11,7 @@ const ProjectPage = ({data}) => {
     <Layout>
       <ProjectPageTemplate
         title={frontmatter.title}
+        lifecycle_title={frontmatter.lifecycle_title}
       />
       <Footer footer_background_color={frontmatter.footer_background_color} />
     </Layout>
@@ -32,6 +33,7 @@ export const pageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
+        lifecycle_title
         footer_background_color
       }
     }

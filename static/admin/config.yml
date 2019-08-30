@@ -53,6 +53,7 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "project-page"}
           - {label: "Title", name: title, widget: string}
+          - {label: "Lifecycle Section Title", name: lifecycle_title, widget: string}
 
 
       - file: "src/pages/pricing/index.md"

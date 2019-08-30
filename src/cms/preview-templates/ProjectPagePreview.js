@@ -6,6 +6,7 @@ const ProjectPagePreview = ({ entry, getAsset }) => {
   return (
     <ProjectPageTemplate
       title={entry.getIn(['data', 'title'])}
+      lifecycle_title={entry.getIn(['data', 'lifecycle_title'])}
     />
   )
 }
