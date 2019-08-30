@@ -47,6 +47,13 @@ collections:
           - {label: "Team Member", name: member_4, widget: string}
           - {label: "Button Heading", name: button_heading, widget: string}
 
+      - file: "src/pages/project/index.md"
+        label: "Project"
+        name: "project"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "project-page"}
+          - {label: "Title", name: title, widget: string}
+
 
       - file: "src/pages/pricing/index.md"
         label: "Pricing Page"

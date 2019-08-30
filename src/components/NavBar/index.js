@@ -31,7 +31,7 @@ const NavBar = ({toggleNavbar, isActive}) => (
 
           <div className='navbar-end'>
             {/* <SearchBox searchIndex={data.siteSearchIndex.index} /> */}
-            <Link className='navbar-item' to='#'>
+            <Link className='navbar-item' to='/project'>
                             Project
             </Link>
             <Link className='navbar-item' to='/about'>
