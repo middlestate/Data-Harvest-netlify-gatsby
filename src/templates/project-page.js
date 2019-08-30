@@ -13,6 +13,12 @@ const ProjectPage = ({data}) => {
         title={frontmatter.title}
         lifecycle_title={frontmatter.lifecycle_title}
         lifecycle_description={frontmatter.lifecycle_description}
+        stage_1_title={frontmatter.stage_1_title}
+        stage_2_title={frontmatter.stage_2_title}
+        stage_3_title={frontmatter.stage_3_title}
+        stage_4_title={frontmatter.stage_4_title}
+        stage_5_title={frontmatter.stage_5_title}
+        stage_6_title={frontmatter.stage_6_title}
       />
       <Footer footer_background_color={frontmatter.footer_background_color} />
     </Layout>
@@ -37,6 +43,12 @@ export const pageQuery = graphql`
         lifecycle_title
         lifecycle_description
         footer_background_color
+        stage_1_title
+        stage_2_title
+        stage_3_title
+        stage_4_title
+        stage_5_title
+        stage_6_title
       }
     }
   }

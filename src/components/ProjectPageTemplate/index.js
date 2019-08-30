@@ -5,6 +5,12 @@ const ProjectPageTemplate = ({
   title,
   lifecycle_title,
   lifecycle_description,
+  stage_1_title,
+  stage_2_title,
+  stage_3_title,
+  stage_4_title,
+  stage_5_title,
+  stage_6_title,
 }) => (
   <div className='project-page'>
     <section className='project section'>
@@ -13,6 +19,14 @@ const ProjectPageTemplate = ({
     <section className='lifecycle section'>
       <h1>{lifecycle_title}</h1>
       <p>{lifecycle_description}</p>
+      <ul className='stages'>
+        <li className='stage'>{stage_1_title}</li>
+        <li className='stage'>{stage_2_title}</li>
+        <li className='stage'>{stage_3_title}</li>
+        <li className='stage'>{stage_4_title}</li>
+        <li className='stage'>{stage_5_title}</li>
+        <li className='stage'>{stage_6_title}</li>
+      </ul>
     </section>
   </div>
 
@@ -22,6 +36,12 @@ ProjectPageTemplate.propTypes = {
   title: PropTypes.string,
   lifecycle_title: PropTypes.string,
   lifecycle_description: PropTypes.string,
+  stage_1_title: PropTypes.string,
+  stage_2_title: PropTypes.string,
+  stage_3_title: PropTypes.string,
+  stage_4_title: PropTypes.string,
+  stage_5_title: PropTypes.string,
+  stage_6_title: PropTypes.string,
 }
 
 export default ProjectPageTemplate

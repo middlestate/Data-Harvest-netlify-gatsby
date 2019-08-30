@@ -46,6 +46,12 @@ collections:
           - {label: "Team Member", name: member_3, widget: string}
           - {label: "Team Member", name: member_4, widget: string}
           - {label: "Button Heading", name: button_heading, widget: string}
+          - {label: "Stage 1 Title", name: stage_1_title, widget: string}
+          - {label: "Stage 2 Title", name: stage_2_title, widget: string}
+          - {label: "Stage 3 Title", name: stage_3_title, widget: string}
+          - {label: "Stage 4 Title", name: stage_4_title, widget: string}
+          - {label: "Stage 5 Title", name: stage_5_title, widget: string}
+          - {label: "Stage 6 Title", name: stage_6_title, widget: string}
 
       - file: "src/pages/project/index.md"
         label: "Project"
