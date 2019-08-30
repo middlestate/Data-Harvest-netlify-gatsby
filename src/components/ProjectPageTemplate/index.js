@@ -19,14 +19,14 @@ const ProjectPageTemplate = ({
     <section className='lifecycle section'>
       <h1>{lifecycle_title}</h1>
       <p>{lifecycle_description}</p>
-      <ul className='stages'>
-        <li className='stage'>{stage_1_title}</li>
-        <li className='stage'>{stage_2_title}</li>
-        <li className='stage'>{stage_3_title}</li>
-        <li className='stage'>{stage_4_title}</li>
-        <li className='stage'>{stage_5_title}</li>
-        <li className='stage'>{stage_6_title}</li>
-      </ul>
+      <div className='stages'>
+        <div className='stage'>{stage_1_title}</div>
+        <div className='stage'>{stage_2_title}</div>
+        <div className='stage'>{stage_3_title}</div>
+        <div className='stage'>{stage_4_title}</div>
+        <div className='stage'>{stage_5_title}</div>
+        <div className='stage'>{stage_6_title}</div>
+      </div>
     </section>
   </div>
 
