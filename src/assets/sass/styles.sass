@@ -4,6 +4,7 @@ $primary: #00d1b2
 $primary-invert: #ffffff
 $hero-section-padding-large: 20.5rem 1.5rem
 $hero-block-section-padding-medium: 6rem 1.5rem
+$project-hero-section-padding-medium: 15rem 1.5rem
 
 nav
   border-bottom: lightgray solid 0.1vmin
@@ -124,8 +125,6 @@ nav
   button:hover
     cursor: pointer
     background-color: gray
-    
-
 
 .affiliates
   background-color: darkgray
@@ -193,7 +192,6 @@ nav
     max-width: fit-content
     width: auto
   .column
-    // padding: $section-padding-large
     height: 200vh
   .img-col
     background-color: gray
@@ -257,9 +255,28 @@ nav
       background-color: gray
 
 
+/* Project Page */
+.project
+  background: linear-gradient(rgba(0,0,0, .5),rgba(0,0,0, .5)),url('/img/avocado_branch.jpeg')
+  background-position: center center
+  padding: $project-hero-section-padding-medium
+  h1
+    text-align: center
+    font-family: Lato
+    font-weight: bold
+    color: #ffffff
+    position: relative
+    top: 100px
 
-
+@media only screen and (min-width: 200px)
+  .project
+    h1
+      font-size: 28px
 
 @media only screen and (min-width: 600px)
   .navbar
-    padding: 0 100px 0 100px    
+    padding: 0 100px 0 100px
+
+  .project
+    h1
+      font-size: 58px

@@ -10,7 +10,7 @@ const ProjectPagePreview = ({ entry, getAsset }) => {
   )
 }
 
-ProjectPagePreview.PropTypes = {
+ProjectPagePreview.propTypes = {
   entry: PropTypes.shape({
     getIn: PropTypes.func,
   }),

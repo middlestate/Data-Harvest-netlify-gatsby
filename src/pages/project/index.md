@@ -1,5 +1,5 @@
 ---
 templateKey: 'project-page'
-title: Project Page
+title: DataHarvest Project
 footer_background_color: '#606061'
 ---

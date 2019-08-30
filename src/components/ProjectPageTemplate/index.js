@@ -5,11 +5,14 @@ const ProjectPageTemplate = ({
   title,
 }) => (
   <div>
-    <h1>{title}</h1>
+    <section className='project section'>
+      <h1>{title}</h1>
+    </section>
   </div>
+
 )
 
-ProjectPageTemplate.PropTypes = {
+ProjectPageTemplate.propTypes = {
   title: PropTypes.string,
 }
 

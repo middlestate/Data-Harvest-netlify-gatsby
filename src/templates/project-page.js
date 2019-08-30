@@ -17,7 +17,7 @@ const ProjectPage = ({data}) => {
   )
 }
 
-ProjectPage.PropTypes = {
+ProjectPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object,
