@@ -54,6 +54,7 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "project-page"}
           - {label: "Title", name: title, widget: string}
           - {label: "Lifecycle Section Title", name: lifecycle_title, widget: string}
+          - {label: "Lifecycle Description", name: lifecycle_description, widget: text}
 
 
       - file: "src/pages/pricing/index.md"

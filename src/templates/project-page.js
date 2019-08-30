@@ -12,6 +12,7 @@ const ProjectPage = ({data}) => {
       <ProjectPageTemplate
         title={frontmatter.title}
         lifecycle_title={frontmatter.lifecycle_title}
+        lifecycle_description={frontmatter.lifecycle_description}
       />
       <Footer footer_background_color={frontmatter.footer_background_color} />
     </Layout>
@@ -34,6 +35,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         lifecycle_title
+        lifecycle_description
         footer_background_color
       }
     }
