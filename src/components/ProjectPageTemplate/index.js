@@ -76,6 +76,7 @@ const ProjectPageTemplate = ({
         </div>
       </div>
     </section>
+    <section className='features section' />
   </div>
 
 )
