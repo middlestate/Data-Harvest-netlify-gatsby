@@ -19,24 +19,30 @@ const ProjectPageTemplate = ({
     <section className='lifecycle section'>
       <h1>{lifecycle_title}</h1>
       <p>{lifecycle_description}</p>
-      <div className='stages'>
-        <div className='stage'>
+      <div className='stages columns'>
+        <div className='stage column'>
           <h3>{stage_1_title}</h3>
+          <img src='/img/research.png' alt='research' />
         </div>
-        <div className='stage'>
+        <div className='stage column'>
           <h3>{stage_2_title}</h3>
+          <img src='/img/nursery.png' alt='nursery' />
         </div>
-        <div className='stage'>
+        <div className='stage column'>
           <h3>{stage_3_title}</h3>
+          <img src='/img/operations.png' alt='operations' />
         </div>
-        <div className='stage'>
+        <div className='stage column'>
           <h3>{stage_4_title}</h3>
+          <img src='/img/logistics.png' alt='logistics' />
         </div>
-        <div className='stage'>
+        <div className='stage column'>
           <h3>{stage_5_title}</h3>
+          <img src='/img/retail.png' alt='retail' />
         </div>
-        <div className='stage'>
+        <div className='stage column'>
           <h3>{stage_6_title}</h3>
+          <img src='/img/consumer.png' alt='consumer' />
         </div>
       </div>
     </section>
