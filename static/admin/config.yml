@@ -73,6 +73,7 @@ collections:
           - {label: "Stage 6 Title", name: stage_6_title, widget: string}
           - {label: "Stage 6 Image", name: stage_6_image, widget: image}
           - {label: "Stage 6 Image After", name: stage_6_image_after, widget: image}
+          - {label: "Features Section Title", name: features_title, widget: string}
 
 
       # - file: "src/pages/pricing/index.md"

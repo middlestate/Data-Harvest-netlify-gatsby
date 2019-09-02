@@ -21,5 +21,6 @@ stage_5_image_after: /img/retail_after.png
 stage_6_title: Consumer
 stage_6_image: /img/consumer.png
 stage_6_image_after: /img/consumer_after.png
+features_title: Features and technology
 footer_background_color: '#606061'
 ---

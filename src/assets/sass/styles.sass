@@ -331,12 +331,19 @@ nav
   z-index: 1
 
 .features
-  padding: $project-features-section-padding-large
+  // padding: $project-features-section-padding-large
   background-color: #89ac7e
+  .features_title
+    font-family: Lato
+    color: #404040
 
 @media only screen and (min-width: 200px)
   .project-page
     h1
+      font-size: 28px
+
+  .features
+    .features_title
       font-size: 28px
 
 @media only screen and (min-width: 600px)
@@ -346,6 +353,11 @@ nav
   .project
     h1
       font-size: 58px
+
   .lifecycle
     h1
+      font-size: 48px
+
+  .features
+    .features_title
       font-size: 48px
