@@ -297,6 +297,38 @@ nav
     padding-bottom: 20px
     text-align: center
 
+.stage_image_container
+  position: relative
+  display: inline-block
+
+.stage_image_container:hover
+  .first_image
+    opacity: 0
+    transition: opacity .2s linear,visibility .2s linear
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 1
+  .second_image
+    opacity: 1
+    transition: opacity .2s linear,visibility .2s linear
+    position: relative
+    z-index: 2
+
+.first_image
+  opacity: 1
+  transition: opacity .2s linear,visibility .2s linear
+  position: relative
+  z-index: 2
+
+.second_image
+  opacity: 0
+  transition: opacity .2s linear,visibility .2s linear
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 1
+
 @media only screen and (min-width: 200px)
   .project-page
     h1

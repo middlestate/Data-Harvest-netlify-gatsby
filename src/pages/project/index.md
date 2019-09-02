@@ -20,6 +20,6 @@ stage_5_image: /img/retail.png
 stage_5_image_after: /img/retail_after.png
 stage_6_title: Consumer
 stage_6_image: /img/consumer.png
-stage_6_image_after: /img/retail_after.png
+stage_6_image_after: /img/consumer_after.png
 footer_background_color: '#606061'
 ---
