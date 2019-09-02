@@ -6,11 +6,17 @@ const ProjectPageTemplate = ({
   lifecycle_title,
   lifecycle_description,
   stage_1_title,
+  stage_1_image,
   stage_2_title,
+  stage_2_image,
   stage_3_title,
+  stage_3_image,
   stage_4_title,
+  stage_4_image,
   stage_5_title,
+  stage_5_image,
   stage_6_title,
+  stage_6_image,
 }) => (
   <div className='project-page'>
     <section className='project section'>
@@ -22,27 +28,27 @@ const ProjectPageTemplate = ({
       <div className='stages columns'>
         <div className='stage column'>
           <h3>{stage_1_title}</h3>
-          <img src='/img/research.png' alt='research' />
+          <img src={stage_1_image} alt='research' />
         </div>
         <div className='stage column'>
           <h3>{stage_2_title}</h3>
-          <img src='/img/nursery.png' alt='nursery' />
+          <img src={stage_2_image} alt='nursery' />
         </div>
         <div className='stage column'>
           <h3>{stage_3_title}</h3>
-          <img src='/img/operations.png' alt='operations' />
+          <img src={stage_3_image} alt='operations' />
         </div>
         <div className='stage column'>
           <h3>{stage_4_title}</h3>
-          <img src='/img/logistics.png' alt='logistics' />
+          <img src={stage_4_image} alt='logistics' />
         </div>
         <div className='stage column'>
           <h3>{stage_5_title}</h3>
-          <img src='/img/retail.png' alt='retail' />
+          <img src={stage_5_image} alt='retail' />
         </div>
         <div className='stage column'>
           <h3>{stage_6_title}</h3>
-          <img src='/img/consumer.png' alt='consumer' />
+          <img src={stage_6_image} alt='consumer' />
         </div>
       </div>
     </section>

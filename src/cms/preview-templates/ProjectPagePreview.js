@@ -9,11 +9,17 @@ const ProjectPagePreview = ({ entry, getAsset }) => {
       lifecycle_title={entry.getIn(['data', 'lifecycle_title'])}
       lifecycle_description={entry.getIn(['data', 'lifecycle_description'])}
       stage_1_title={entry.getIn(['data', 'stage_1_title'])}
+      stage_1_image={entry.getIn(['data', 'stage_1_image'])}
       stage_2_title={entry.getIn(['data', 'stage_2_title'])}
+      stage_2_image={entry.getIn(['data', 'stage_2_image'])}
       stage_3_title={entry.getIn(['data', 'stage_3_title'])}
+      stage_3_image={entry.getIn(['data', 'stage_3_image'])}
       stage_4_title={entry.getIn(['data', 'stage_4_title'])}
+      stage_4_image={entry.getIn(['data', 'stage_4_image'])}
       stage_5_title={entry.getIn(['data', 'stage_5_title'])}
+      stage_5_image={entry.getIn(['data', 'stage_5_image'])}
       stage_6_title={entry.getIn(['data', 'stage_6_title'])}
+      stage_6_image={entry.getIn(['data', 'stage_6_image'])}
     />
   )
 }
