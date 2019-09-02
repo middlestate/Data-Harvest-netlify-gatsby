@@ -36,42 +36,42 @@ const ProjectPageTemplate = ({
           <h3>{stage_1_title}</h3>
           <div className='stage_image_container'>
             <img src={stage_1_image} className='first_image' alt='research' />
-            <img src={stage_1_image_after} className='second_image' alt='research_after' />          
+            <img src={stage_1_image_after} className='second_image' alt='research_after' />
           </div>
         </div>
         <div className='stage column'>
           <h3>{stage_2_title}</h3>
           <div className='stage_image_container'>
             <img src={stage_2_image} className='first_image' alt='nursery' />
-            <img src={stage_2_image_after} className='second_image' alt='nursery_after' />          
+            <img src={stage_2_image_after} className='second_image' alt='nursery_after' />
           </div>
         </div>
         <div className='stage column'>
           <h3>{stage_3_title}</h3>
           <div className='stage_image_container'>
             <img src={stage_3_image} className='first_image' alt='operations' />
-            <img src={stage_3_image_after} className='second_image' alt='operations_after' />          
+            <img src={stage_3_image_after} className='second_image' alt='operations_after' />
           </div>
         </div>
         <div className='stage column'>
           <h3>{stage_4_title}</h3>
           <div className='stage_image_container'>
             <img src={stage_4_image} className='first_image' alt='logistics' />
-            <img src={stage_4_image_after} className='second_image' alt='logistics_after' />          
+            <img src={stage_4_image_after} className='second_image' alt='logistics_after' />
           </div>
         </div>
         <div className='stage column'>
           <h3>{stage_5_title}</h3>
           <div className='stage_image_container'>
             <img src={stage_5_image} className='first_image' alt='retail' />
-            <img src={stage_5_image_after} className='second_image' alt='retail_after' />          
+            <img src={stage_5_image_after} className='second_image' alt='retail_after' />
           </div>
         </div>
         <div className='stage column'>
           <h3>{stage_6_title}</h3>
           <div className='stage_image_container'>
             <img src={stage_6_image} className='first_image' alt='consumer' />
-            <img src={stage_6_image_after} className='second_image' alt='consumer_after' />          
+            <img src={stage_6_image_after} className='second_image' alt='consumer_after' />
           </div>
         </div>
       </div>
