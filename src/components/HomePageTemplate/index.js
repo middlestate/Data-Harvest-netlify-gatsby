@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import {Link} from 'gatsby'
 
 const HomePageTemplate = ({
   header_title_image,
@@ -44,7 +45,9 @@ const HomePageTemplate = ({
             <h1>{avocado_heading}</h1>
             <h2>{avocado_subheading}</h2>
             <p>{avocado_description}</p>
-            <button>DataHarvest Project</button>
+            <Link to='/project'>
+              <button>DataHarvest Project</button>
+            </Link>
           </div>
           <div className='column'>
             <img src={avocado_image} alt='avocado' />
@@ -80,7 +83,9 @@ const HomePageTemplate = ({
             <h1>{spotlight_heading}</h1>
             <h2>{spotlight_subheading}</h2>
             <p>{spotlight_description}</p>
-            <button>Talk to Us!</button>
+            <a href='https://mdst.typeform.com/to/SENQ20'>
+              <button>Talk to Us!</button>
+            </a>
           </div>
         </div>
       </div>
