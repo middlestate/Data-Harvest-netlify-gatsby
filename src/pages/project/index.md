@@ -22,5 +22,6 @@ stage_6_title: Consumer
 stage_6_image: /img/consumer.png
 stage_6_image_after: /img/consumer_after.png
 features_title: Features and technology
+features_subtitle: We partner with organizations and build connections with technology to impact each stage of the product lifecycle.
 footer_background_color: '#606061'
 ---

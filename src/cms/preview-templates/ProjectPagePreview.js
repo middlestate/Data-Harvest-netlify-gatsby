@@ -27,6 +27,7 @@ const ProjectPagePreview = ({ entry, getAsset }) => {
       stage_6_image={entry.getIn(['data', 'stage_6_image'])}
       stage_6_image_after={entry.getIn(['data', 'stage_6_image_after'])}
       features_title={entry.getIn(['data', 'features_title'])}
+      features_subtitle={entry.getIn(['data', 'features_subtitle'])}
     />
   )
 }

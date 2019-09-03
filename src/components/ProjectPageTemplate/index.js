@@ -24,6 +24,7 @@ const ProjectPageTemplate = ({
   stage_6_image,
   stage_6_image_after,
   features_title,
+  features_subtitle,
 }) => (
   <div className='project-page'>
     <section className='project section'>
@@ -79,6 +80,7 @@ const ProjectPageTemplate = ({
     </section>
     <section className='features section'>
       <h1 className='features_title'>{features_title}</h1>
+      <h2 className='features_subtitle'>{features_subtitle}</h2>
     </section>
   </div>
 
@@ -95,6 +97,7 @@ ProjectPageTemplate.propTypes = {
   stage_5_title: PropTypes.string,
   stage_6_title: PropTypes.string,
   features_title: PropTypes.string,
+  features_subtitle: PropTypes.string,
 }
 
 export default ProjectPageTemplate
