@@ -7,11 +7,15 @@ $hero-block-section-padding-medium: 6rem 1.5rem
 $project-features-section-padding-large: 36rem 3rem
 $project-hero-section-padding-medium: 12rem 1.5rem
 
+html.has-navbar-fixed-top
+  padding-top: 0
+
 nav
   border-bottom: lightgray solid 0.1vmin
 
 .navbar
-  background-color: black
+  background-color: transparent
+  border-bottom: transparent
   .navbar-item
     color: white
     font-size: 13px
@@ -23,6 +27,9 @@ nav
     line-height: 90px
     img
       max-height: 100%
+  .navbar-item:hover
+    color: purple
+    background-color: transparent
 
 .footer
   p
@@ -342,6 +349,9 @@ nav
     font-family: Lato
     font-size: 22px
     color: #404040
+
+.tiles-container
+  text-align: left
 
 @media only screen and (min-width: 200px)
   .project-page

@@ -81,6 +81,7 @@ const ProjectPageTemplate = ({
     <section className='features section'>
       <h1 className='features_title'>{features_title}</h1>
       <h2 className='features_subtitle'>{features_subtitle}</h2>
+      <div className='tiles-container' />
     </section>
   </div>
 
