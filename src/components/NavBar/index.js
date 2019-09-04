@@ -8,12 +8,6 @@ class NavBar extends React.Component {
     super(props)
     this.state = {
       isActive: false,
-      // height: 'beforeScroll',
-      // logo: 'beforeScroll',
-      // logo_height: 'beforeScroll',
-      // textColor: 'beforeScroll',
-      // backgroundColor: 'beforeScroll',
-      // borderBottom: 'beforeScroll',
       isTop: true,
     }
     this.toggleNavbar = this.toggleNavbar.bind(this)
