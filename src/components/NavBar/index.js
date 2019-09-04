@@ -17,11 +17,14 @@ class NavBar extends React.Component {
   }
 
   render () {
+    const navbar_backgroundColor = this.props.navbar_backgroundColor
+    const navbar_textColor = this.props.navbar_textColor
+    const navbar_logo = this.props.navbar_logo
     return (
-      <nav className='navbar is-fixed-top' aria-label='main navigation'>
+      <nav className='navbar is-fixed-top' style={{backgroundColor: navbar_backgroundColor}} aria-label='main navigation'>
         <div className='navbar-brand'>
           <Link to='/' className='navbar-item'>
-            <img src='/img/dataharvest_logo_white.png' alt='DataHarvest White Logo' />
+            <img src={navbar_logo} alt='DataHarvest White Logo' />
           </Link>
           <button
             className={`button navbar-burger ${this.state.isActive ? 'is-active' : ''}`}
@@ -37,10 +40,10 @@ class NavBar extends React.Component {
 
           <div className='navbar-end'>
             {/* <SearchBox searchIndex={data.siteSearchIndex.index} /> */}
-            <Link className='navbar-item' to='/project'>
+            <Link className='navbar-item' style={{color: navbar_textColor}} to='/project'>
                             Project
             </Link>
-            <Link className='navbar-item' to='/about'>
+            <Link className='navbar-item' style={{color: navbar_textColor}} to='/about'>
                             About
             </Link>
           </div>

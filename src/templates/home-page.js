@@ -4,12 +4,18 @@ import {graphql} from 'gatsby'
 import HomePageTemplate from '../components/HomePageTemplate'
 import Layout from '../components/Layout'
 import Footer from '../components/Footer/index'
+import NavBar from '../components/NavBar/index'
 
 const HomePage = ({data}) => {
   const {frontmatter} = data.markdownRemark
 
   return (
     <Layout>
+      <NavBar
+        navbar_backgroundColor={frontmatter.navbar_backgroundColor}
+        navbar_textColor={frontmatter.navbar_textColor}
+        navbar_logo={frontmatter.navbar_logo}
+      />
       <HomePageTemplate
         header_title_image={frontmatter.header_title_image}
         subheading_part1={frontmatter.subheading_part1}
@@ -46,6 +52,9 @@ export const pageQuery = graphql`
   query IndexPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
+        navbar_backgroundColor
+        navbar_textColor
+        navbar_logo
         header_title_image
         subheading_part1
         subheading_part2
