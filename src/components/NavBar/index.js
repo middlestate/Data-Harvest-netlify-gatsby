@@ -8,14 +8,24 @@ class NavBar extends React.Component {
     super(props)
     this.state = {
       isActive: false,
-      height: 'beforeScroll',
-      logo: 'beforeScroll',
-      logo_height: 'beforeScroll',
-      textColor: 'beforeScroll',
-      backgroundColor: 'beforeScroll',
-      borderBottom: 'beforeScroll',
+      // height: 'beforeScroll',
+      // logo: 'beforeScroll',
+      // logo_height: 'beforeScroll',
+      // textColor: 'beforeScroll',
+      // backgroundColor: 'beforeScroll',
+      // borderBottom: 'beforeScroll',
+      isTop: true,
     }
     this.toggleNavbar = this.toggleNavbar.bind(this)
+  }
+
+  componentDidMount () {
+    document.addEventListener('scroll', () => {
+      const isTop = window.scrollY < 100
+      if (isTop !== this.state.isTop) {
+        this.setState({ isTop })
+      }
+    })
   }
 
   toggleNavbar () {
@@ -41,12 +51,12 @@ class NavBar extends React.Component {
         style={
           {
             backgroundColor: `${
-              this.state.backgroundColor === 'beforeScroll'
+              this.state.isTop
                 ? navbar_backgroundColor_beforeScroll
                 : navbar_backgroundColor_afterScroll
             }`,
             borderBottom: `${
-              this.state.borderBottom === 'beforeScroll'
+              this.state.isTop
                 ? border_bottom_beforeScroll
                 : border_bottom_afterScroll
             }`,
@@ -57,14 +67,14 @@ class NavBar extends React.Component {
           <Link to='/' className='navbar-item'>
             <img src={
               `${
-                this.state.logo === 'beforeScroll'
+                this.state.isTop
                   ? navbar_logo_beforeScroll
                   : navbar_logo_afterScroll
               }`
             } style={
               {
                 height: `${
-                  this.state.logo_height === 'beforeScroll'
+                  this.state.isTop
                     ? navbar_logo_height_beforeScroll
                     : navbar_logo_height_afterScroll
                 }`,
@@ -88,12 +98,12 @@ class NavBar extends React.Component {
             <Link className='navbar-item' style={
               {
                 color: `${
-                  this.state.textColor === 'beforeScroll'
+                  this.state.isTop
                     ? navbar_textColor_beforeScroll
                     : navbar_textColor_afterScroll
                 }`,
                 height: `${
-                  this.state.height === 'beforeScroll'
+                  this.state.isTop
                     ? navbar_height_beforeScroll
                     : navbar_height_afterScroll
                 }`,
@@ -104,12 +114,12 @@ class NavBar extends React.Component {
             <Link className='navbar-item' style={
               {
                 color: `${
-                  this.state.textColor === 'beforeScroll'
+                  this.state.isTop
                     ? navbar_textColor_beforeScroll
                     : navbar_textColor_afterScroll
                 }`,
                 height: `${
-                  this.state.height === 'beforeScroll'
+                  this.state.isTop
                     ? navbar_height_beforeScroll
                     : navbar_height_afterScroll
                 }`,
