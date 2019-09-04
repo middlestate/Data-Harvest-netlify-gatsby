@@ -12,12 +12,12 @@ const HomePage = ({data}) => {
   return (
     <Layout>
       <NavBar
-        navbar_backgroundColor={frontmatter.navbar_backgroundColor}
-        navbar_textColor={frontmatter.navbar_textColor}
-        navbar_logo={frontmatter.navbar_logo}
-        border_bottom={frontmatter.border_bottom}
-        navbar_height={frontmatter.navbar_height}
-        navbar_logo_height={frontmatter.navbar_logo_height}
+        navbar_backgroundColor_beforeScroll={frontmatter.navbar_backgroundColor_beforeScroll}
+        navbar_textColor_beforeScroll={frontmatter.navbar_textColor_beforeScroll}
+        navbar_logo_beforeScroll={frontmatter.navbar_logo_beforeScroll}
+        border_bottom_beforeScroll={frontmatter.border_bottom_beforeScroll}
+        navbar_height_beforeScroll={frontmatter.navbar_height_beforeScroll}
+        navbar_logo_height_beforeScroll={frontmatter.navbar_logo_height_beforeScroll}
         navbar_backgroundColor_afterScroll={frontmatter.navbar_backgroundColor_afterScroll}
         navbar_textColor_afterScroll={frontmatter.navbar_textColor_afterScroll}
         navbar_logo_afterScroll={frontmatter.navbar_logo_afterScroll}
@@ -61,12 +61,12 @@ export const pageQuery = graphql`
   query IndexPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
-        navbar_backgroundColor
-        navbar_textColor
-        navbar_logo
-        border_bottom
-        navbar_height
-        navbar_logo_height
+        navbar_backgroundColor_beforeScroll
+        navbar_textColor_beforeScroll
+        navbar_logo_beforeScroll
+        border_bottom_beforeScroll
+        navbar_height_beforeScroll
+        navbar_logo_height_beforeScroll
         navbar_backgroundColor_afterScroll
         navbar_textColor_afterScroll
         navbar_logo_afterScroll

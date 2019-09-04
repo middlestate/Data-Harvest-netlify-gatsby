@@ -1,11 +1,11 @@
 ---
 templateKey: 'home-page'
-navbar_backgroundColor: 'transparent'
-navbar_textColor: '#ffffff'
-navbar_logo: /img/dataharvest_logo_white.png
-border_bottom: none
-navbar_height: '90px'
-navbar_logo_height: '90px'
+navbar_backgroundColor_beforeScroll: 'transparent'
+navbar_textColor_beforeScroll: '#ffffff'
+navbar_logo_beforeScroll: /img/dataharvest_logo_white.png
+border_bottom_beforeScroll: none
+navbar_height_beforeScroll: '90px'
+navbar_logo_height_beforeScroll: '90px'
 navbar_backgroundColor_afterScroll: 'white'
 navbar_textColor_afterScroll: '#444444'
 navbar_logo_afterScroll: /img/dataharvest_logo_green.png
