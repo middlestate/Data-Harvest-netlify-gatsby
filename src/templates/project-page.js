@@ -11,10 +11,20 @@ const ProjectPage = ({data}) => {
   return (
     <Layout>
       <NavBar
-        navbar_backgroundColor={frontmatter.navbar_backgroundColor}
-        navbar_textColor={frontmatter.navbar_textColor}
-        navbar_logo={frontmatter.navbar_logo}
-        border_bottom={frontmatter.border_bottom}
+        navbar_backgroundColor_beforeScroll={frontmatter.navbar_backgroundColor_beforeScroll}
+        navbar_textColor_beforeScroll={frontmatter.navbar_textColor_beforeScroll}
+        navbar_logo_beforeScroll={frontmatter.navbar_logo_beforeScroll}
+        border_bottom_beforeScroll={frontmatter.border_bottom_beforeScroll}
+        navbar_height_beforeScroll={frontmatter.navbar_height_beforeScroll}
+        navbar_logo_height_beforeScroll={frontmatter.navbar_logo_height_beforeScroll}
+        navbar_logo_width_beforeScroll={frontmatter.navbar_logo_width_beforeScroll}
+        navbar_backgroundColor_afterScroll={frontmatter.navbar_backgroundColor_afterScroll}
+        navbar_textColor_afterScroll={frontmatter.navbar_textColor_afterScroll}
+        navbar_logo_afterScroll={frontmatter.navbar_logo_afterScroll}
+        border_bottom_afterScroll={frontmatter.border_bottom_afterScroll}
+        navbar_height_afterScroll={frontmatter.navbar_height_afterScroll}
+        navbar_logo_height_afterScroll={frontmatter.navbar_logo_height_afterScroll}
+        navbar_logo_width_afterScroll={frontmatter.navbar_logo_width_afterScroll}
       />
       <ProjectPageTemplate
         title={frontmatter.title}
@@ -60,10 +70,20 @@ export const pageQuery = graphql`
   query ProjectPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
-        navbar_backgroundColor
-        navbar_textColor
-        navbar_logo
-        border_bottom
+        navbar_backgroundColor_beforeScroll
+        navbar_textColor_beforeScroll
+        navbar_logo_beforeScroll
+        border_bottom_beforeScroll
+        navbar_height_beforeScroll
+        navbar_logo_height_beforeScroll
+        navbar_logo_width_beforeScroll
+        navbar_backgroundColor_afterScroll
+        navbar_textColor_afterScroll
+        navbar_logo_afterScroll
+        border_bottom_afterScroll
+        navbar_height_afterScroll
+        navbar_logo_height_afterScroll
+        navbar_logo_width_afterScroll
         title
         lifecycle_title
         lifecycle_description

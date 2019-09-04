@@ -33,6 +33,7 @@ class NavBar extends React.Component {
     const border_bottom_beforeScroll = this.props.border_bottom_beforeScroll
     const navbar_height_beforeScroll = this.props.navbar_height_beforeScroll
     const navbar_logo_height_beforeScroll = this.props.navbar_logo_height_beforeScroll
+    const navbar_logo_width_beforeScroll = this.props.navbar_logo_width_beforeScroll
 
     const navbar_backgroundColor_afterScroll = this.props.navbar_backgroundColor_afterScroll
     const navbar_textColor_afterScroll = this.props.navbar_textColor_afterScroll
@@ -40,6 +41,7 @@ class NavBar extends React.Component {
     const border_bottom_afterScroll = this.props.border_bottom_afterScroll
     const navbar_height_afterScroll = this.props.navbar_height_afterScroll
     const navbar_logo_height_afterScroll = this.props.navbar_logo_height_afterScroll
+    const navbar_logo_width_afterScroll = this.props.navbar_logo_width_afterScroll
     return (
       <nav className='navbar is-fixed-top'
         style={
@@ -71,6 +73,11 @@ class NavBar extends React.Component {
                   this.state.isTop
                     ? navbar_logo_height_beforeScroll
                     : navbar_logo_height_afterScroll
+                }`,
+                width: `${
+                  this.state.isTop
+                    ? navbar_logo_width_beforeScroll
+                    : navbar_logo_width_afterScroll
                 }`,
               }
             } alt='DataHarvest White Logo' />
