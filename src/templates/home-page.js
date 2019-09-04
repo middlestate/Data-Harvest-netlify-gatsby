@@ -15,6 +15,7 @@ const HomePage = ({data}) => {
         navbar_backgroundColor={frontmatter.navbar_backgroundColor}
         navbar_textColor={frontmatter.navbar_textColor}
         navbar_logo={frontmatter.navbar_logo}
+        border_bottom={frontmatter.border_bottom}
       />
       <HomePageTemplate
         header_title_image={frontmatter.header_title_image}
@@ -55,6 +56,7 @@ export const pageQuery = graphql`
         navbar_backgroundColor
         navbar_textColor
         navbar_logo
+        border_bottom
         header_title_image
         subheading_part1
         subheading_part2

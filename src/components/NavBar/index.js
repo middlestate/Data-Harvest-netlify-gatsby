@@ -20,8 +20,9 @@ class NavBar extends React.Component {
     const navbar_backgroundColor = this.props.navbar_backgroundColor
     const navbar_textColor = this.props.navbar_textColor
     const navbar_logo = this.props.navbar_logo
+    const border_bottom = this.props.border_bottom
     return (
-      <nav className='navbar is-fixed-top' style={{backgroundColor: navbar_backgroundColor}} aria-label='main navigation'>
+      <nav className='navbar is-fixed-top' style={{backgroundColor: navbar_backgroundColor, borderBottom: border_bottom}} aria-label='main navigation'>
         <div className='navbar-brand'>
           <Link to='/' className='navbar-item'>
             <img src={navbar_logo} alt='DataHarvest White Logo' />

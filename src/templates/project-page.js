@@ -4,11 +4,18 @@ import {graphql} from 'gatsby'
 import ProjectPageTemplate from '../components/ProjectPageTemplate'
 import Layout from '../components/Layout'
 import Footer from '../components/Footer/index'
+import NavBar from '../components/NavBar/index'
 
 const ProjectPage = ({data}) => {
   const {frontmatter} = data.markdownRemark
   return (
     <Layout>
+      <NavBar
+        navbar_backgroundColor={frontmatter.navbar_backgroundColor}
+        navbar_textColor={frontmatter.navbar_textColor}
+        navbar_logo={frontmatter.navbar_logo}
+        border_bottom={frontmatter.border_bottom}
+      />
       <ProjectPageTemplate
         title={frontmatter.title}
         lifecycle_title={frontmatter.lifecycle_title}
@@ -53,6 +60,10 @@ export const pageQuery = graphql`
   query ProjectPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
+        navbar_backgroundColor
+        navbar_textColor
+        navbar_logo
+        border_bottom
         title
         lifecycle_title
         lifecycle_description

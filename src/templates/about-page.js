@@ -4,12 +4,19 @@ import { graphql } from 'gatsby'
 import AboutPageTemplate from '../components/AboutPageTemplate'
 import Layout from '../components/Layout'
 import Footer from '../components/Footer/index'
+import NavBar from '../components/NavBar/index'
 
 const AboutPage = ({data}) => {
   const {frontmatter} = data.markdownRemark
 
   return (
     <Layout>
+      <NavBar
+        navbar_backgroundColor={frontmatter.navbar_backgroundColor}
+        navbar_textColor={frontmatter.navbar_textColor}
+        navbar_logo={frontmatter.navbar_logo}
+        border_bottom={frontmatter.border_bottom}
+      />
       <AboutPageTemplate
         about_image={frontmatter.about_image}
         title={frontmatter.title}
@@ -40,6 +47,10 @@ export const aboutPageQuery = graphql`
   query AboutPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
+        navbar_backgroundColor
+        navbar_textColor
+        navbar_logo
+        border_bottom
         about_image
         title
         description
