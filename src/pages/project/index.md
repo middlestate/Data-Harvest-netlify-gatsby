@@ -37,5 +37,18 @@ stage_6_image: /img/consumer.png
 stage_6_image_after: /img/consumer_after.png
 features_title: Features and technology
 features_subtitle: We partner with organizations and build connections with technology to impact each stage of the product lifecycle.
+gallery:
+  images:
+    - /img/firstblock_ledger.jpg
+    - /img/data_H_coins.png
+    - /img/cash_node.png
+    - /img/security.png
+    - /img/labor_communications.png
+    - /img/dataharvest_network.png
+    - /img/san_credos.jpeg
+    - /img/prime_glory.jpg
+    - /img/most.png
+    - /img/hyperledger.jpg
+    - /img/AVIP.jpeg
 footer_background_color: '#606061'
 ---

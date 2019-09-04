@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Gallery from '../Gallery/index'
 
 const ProjectPageTemplate = ({
   title,
@@ -25,6 +26,7 @@ const ProjectPageTemplate = ({
   stage_6_image_after,
   features_title,
   features_subtitle,
+  gallery,
 }) => (
   <div className='project-page'>
     <section className='project section'>
@@ -81,7 +83,9 @@ const ProjectPageTemplate = ({
     <section className='features section'>
       <h1 className='features_title'>{features_title}</h1>
       <h2 className='features_subtitle'>{features_subtitle}</h2>
-      <div className='tiles-container' />
+      <div className='tiles-container'>
+        <Gallery gridItems={gallery.images} />
+      </div>
     </section>
   </div>
 
@@ -99,6 +103,9 @@ ProjectPageTemplate.propTypes = {
   stage_6_title: PropTypes.string,
   features_title: PropTypes.string,
   features_subtitle: PropTypes.string,
+  gallery: PropTypes.shape({
+    images: PropTypes.array,
+  }),
 }
 
 export default ProjectPageTemplate

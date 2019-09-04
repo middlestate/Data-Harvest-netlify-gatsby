@@ -50,6 +50,7 @@ const ProjectPage = ({data}) => {
         stage_6_image_after={frontmatter.stage_6_image_after}
         features_title={frontmatter.features_title}
         features_subtitle={frontmatter.features_subtitle}
+        gallery={frontmatter.gallery}
       />
       <Footer footer_background_color={frontmatter.footer_background_color} />
     </Layout>
@@ -108,6 +109,9 @@ export const pageQuery = graphql`
         stage_6_image_after
         features_title
         features_subtitle
+        gallery {
+          images
+        }
       }
     }
   }
