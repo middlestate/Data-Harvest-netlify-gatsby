@@ -4,6 +4,14 @@ navbar_backgroundColor: 'transparent'
 navbar_textColor: '#ffffff'
 navbar_logo: /img/dataharvest_logo_white.png
 border_bottom: none
+navbar_height: '90px'
+navbar_logo_height: '90px'
+navbar_backgroundColor_afterScroll: 'white'
+navbar_textColor_afterScroll: '#444444'
+navbar_logo_afterScroll: /img/dataharvest_logo_green.png
+border_bottom_afterScroll: '1px solid #000000'
+navbar_height_afterScroll: '55px'
+navbar_logo_height_afterScroll: '55px'
 header_title_image: /img/headertitle.png
 subheading_part1: A collaborative project designed to create an immutable record of actions from point or origin.
 subheading_part2: We are telling the story of food

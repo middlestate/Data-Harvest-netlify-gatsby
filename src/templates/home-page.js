@@ -16,6 +16,14 @@ const HomePage = ({data}) => {
         navbar_textColor={frontmatter.navbar_textColor}
         navbar_logo={frontmatter.navbar_logo}
         border_bottom={frontmatter.border_bottom}
+        navbar_height={frontmatter.navbar_height}
+        navbar_logo_height={frontmatter.navbar_logo_height}
+        navbar_backgroundColor_afterScroll={frontmatter.navbar_backgroundColor_afterScroll}
+        navbar_textColor_afterScroll={frontmatter.navbar_textColor_afterScroll}
+        navbar_logo_afterScroll={frontmatter.navbar_logo_afterScroll}
+        border_bottom_afterScroll={frontmatter.border_bottom_afterScroll}
+        navbar_height_afterScroll={frontmatter.navbar_height_afterScroll}
+        navbar_logo_height_afterScroll={frontmatter.navbar_logo_height_afterScroll}
       />
       <HomePageTemplate
         header_title_image={frontmatter.header_title_image}
@@ -57,6 +65,14 @@ export const pageQuery = graphql`
         navbar_textColor
         navbar_logo
         border_bottom
+        navbar_height
+        navbar_logo_height
+        navbar_backgroundColor_afterScroll
+        navbar_textColor_afterScroll
+        navbar_logo_afterScroll
+        border_bottom_afterScroll
+        navbar_height_afterScroll
+        navbar_logo_height_afterScroll
         header_title_image
         subheading_part1
         subheading_part2
