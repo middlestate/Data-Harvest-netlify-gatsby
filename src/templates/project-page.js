@@ -110,7 +110,9 @@ export const pageQuery = graphql`
         features_title
         features_subtitle
         gallery {
-          images
+          images {
+            image
+          }
         }
       }
     }
