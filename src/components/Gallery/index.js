@@ -3,13 +3,13 @@ import PropTypes from 'prop-types'
 
 const Gallery = ({ gridItems }, keys) => {
   return (
-    <div className='gallery-row'>
+    <div className='gallery'>
       <div className='container'>
         <div className='columns'>
           {gridItems.slice(0, 3).map(({ image }, keys) => {
             return (
               <div className='column'>
-                <img src={image} key={keys} alt='project image' />
+                <img src={image} key={keys} className='gallery_image' alt='project image' />
               </div>
             )
           })}
@@ -18,7 +18,7 @@ const Gallery = ({ gridItems }, keys) => {
           {gridItems.slice(3, 7).map(({ image }, keys) => {
             return (
               <div className='column'>
-                <img src={image} key={keys} alt='project image' />
+                <img src={image} key={keys} className='gallery_image' alt='project image' />
               </div>
             )
           })}
@@ -27,7 +27,7 @@ const Gallery = ({ gridItems }, keys) => {
           {gridItems.slice(7, gridItems.length).map(({ image }, keys) => {
             return (
               <div className='column'>
-                <img src={image} key={keys} alt='project image' />
+                <img src={image} key={keys} className='gallery_image' alt='project image' />
               </div>
             )
           })}
