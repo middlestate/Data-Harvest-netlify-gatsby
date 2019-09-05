@@ -3,6 +3,9 @@ import PropTypes from 'prop-types'
 import ProjectPageTemplate from '../../components/ProjectPageTemplate'
 
 const ProjectPagePreview = ({ entry, getAsset }) => {
+  const entryImages = entry.getIn(['data', 'gallery', 'images'])
+  const images = entryImages ? entryImages.toJS() : []
+
   return (
     <ProjectPageTemplate
       title={entry.getIn(['data', 'title'])}
@@ -28,6 +31,7 @@ const ProjectPagePreview = ({ entry, getAsset }) => {
       stage_6_image_after={entry.getIn(['data', 'stage_6_image_after'])}
       features_title={entry.getIn(['data', 'features_title'])}
       features_subtitle={entry.getIn(['data', 'features_subtitle'])}
+      gallery={{ images }}
     />
   )
 }
