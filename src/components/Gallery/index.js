@@ -24,7 +24,7 @@ const Gallery = ({ gridItems }, keys) => {
           })}
         </div>
         <div className='columns'>
-          {gridItems.slice(7, gridItems.length - 1).map(({ image }, keys) => {
+          {gridItems.slice(7, gridItems.length).map(({ image }, keys) => {
             return (
               <div className='column'>
                 <img src={image} key={keys} alt='project image' />
