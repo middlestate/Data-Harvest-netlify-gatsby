@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react'
 import Helmet from 'react-helmet'
 import '../../assets/sass/styles.sass'
 import config from '../../../config'
+import EmailButton from '../../components/EmailButton/index'
 
 class Layout extends Component {
   render () {
@@ -12,6 +13,7 @@ class Layout extends Component {
           <meta name='description' content={config.siteDescription} />
         </Helmet>
         <Fragment>{this.props.children}</Fragment>
+        <EmailButton />
       </Fragment>
     )
   }
