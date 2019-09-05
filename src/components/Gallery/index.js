@@ -5,29 +5,11 @@ const Gallery = ({ gridItems }, keys) => {
   return (
     <div className='gallery'>
       <div className='container'>
-        <div className='columns'>
-          {gridItems.slice(0, 3).map(({ image }, keys) => {
+        <div className='columns is-multiline'>
+          {gridItems.map(({ image }, keys) => {
             return (
-              <div className='column'>
-                <img src={image} key={keys} className='gallery_image' alt='project image' />
-              </div>
-            )
-          })}
-        </div>
-        <div className='columns'>
-          {gridItems.slice(3, 7).map(({ image }, keys) => {
-            return (
-              <div className='column'>
-                <img src={image} key={keys} className='gallery_image' alt='project image' />
-              </div>
-            )
-          })}
-        </div>
-        <div className='columns'>
-          {gridItems.slice(7, gridItems.length).map(({ image }, keys) => {
-            return (
-              <div className='column'>
-                <img src={image} key={keys} className='gallery_image' alt='project image' />
+              <div key={keys} className='column is-4'>
+                <img src={image} className='gallery_image' alt='project image' />
               </div>
             )
           })}
