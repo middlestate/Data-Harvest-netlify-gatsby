@@ -6,7 +6,25 @@ const Gallery = ({ gridItems }, keys) => {
     <div className='gallery-row'>
       <div className='container'>
         <div className='columns'>
-          {gridItems.map(({ image }, keys) => {
+          {gridItems.slice(0, 3).map(({ image }, keys) => {
+            return (
+              <div className='column'>
+                <img src={image} key={keys} alt='project image' />
+              </div>
+            )
+          })}
+        </div>
+        <div className='columns'>
+          {gridItems.slice(3, 7).map(({ image }, keys) => {
+            return (
+              <div className='column'>
+                <img src={image} key={keys} alt='project image' />
+              </div>
+            )
+          })}
+        </div>
+        <div className='columns'>
+          {gridItems.slice(7, 11).map(({ image }, keys) => {
             return (
               <div className='column'>
                 <img src={image} key={keys} alt='project image' />
