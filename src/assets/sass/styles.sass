@@ -371,12 +371,17 @@ nav
     margin-bottom: 18px
     padding-bottom: 20px
 
+.image_container
+  background-color: rgba(22,22,22,0.65)
+  height: 100%
+
 .gallery_image
   height: 100%
   width: 100%
-  position: relative
-  z-index: 1
 
+.image_container:hover 
+  .gallery_image
+    visibility: hidden
 
 
 @media only screen and (min-width: 200px)

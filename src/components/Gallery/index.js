@@ -9,7 +9,9 @@ const Gallery = ({ gridItems }, keys) => {
           {gridItems.map(({ image }, keys) => {
             return (
               <div key={keys} className='column is-4'>
-                <img src={image} className='gallery_image' alt='project image' />
+                <div className='image_container'>
+                  <img src={image} className='gallery_image' alt='project image' />
+                </div>
               </div>
             )
           })}
