@@ -1,19 +1,20 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Gallery = ({ gridItems }) => {
+const Gallery = ({ gridItems }, keys) => {
   return (
     <div className='gallery-row'>
-      {gridItems.map(({ image }, keys) => {
-        return (
-          <div key={keys} className='gallery-column'>
-            <img
-              src={image}
-              alt='project image'
-            />
-          </div>
-        )
-      })}
+      <div className='container'>
+        <div className='columns'>
+          {gridItems.map(({ image }, keys) => {
+            return (
+              <div className='column'>
+                <img src={image} key={keys} alt='project image' />
+              </div>
+            )
+          })}
+        </div>
+      </div>
     </div>
   )
 }
