@@ -376,10 +376,17 @@ nav
   height: 100%
   transition: .25s ease
 
-.gallery
+.column
   h1
     position: relative
     top: 70%
+    visibility: hidden
+    z-index: 0
+
+.column:hover
+  h1
+    visibility: visible
+    color: white
     z-index: 1
 
 .gallery_image
