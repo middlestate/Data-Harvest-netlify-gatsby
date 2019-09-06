@@ -112,6 +112,7 @@ export const pageQuery = graphql`
         gallery {
           images {
             image
+            project_title
           }
         }
       }

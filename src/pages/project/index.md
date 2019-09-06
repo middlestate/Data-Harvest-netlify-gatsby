@@ -40,15 +40,26 @@ features_subtitle: We partner with organizations and build connections with tech
 gallery:
   images:
     - image: /img/firstblock_ledger.jpg
+      project_title: Firstblock Ledger
     - image: /img/data_H_coins.png
+      project_title: Data H Coins
     - image: /img/cash_node.png
+      project_title: Cash.Node
     - image: /img/security.png
+      project_title: Security
     - image: /img/labor_communications.png
+      project_title: Labor Communications
     - image: /img/dataharvest_network.png
+      project_title: DataHarvest Network
     - image: /img/san_credos.jpeg
+      project_title: San Credos
     - image: /img/prime_glory.jpg
+      project_title: Prime Glory
     - image: /img/most.png
+      project_title: Most
     - image: /img/hyperledger.jpg
+      project_title: Hyperledger
     - image: /img/AVIP.jpeg
+      project_title: AVIP
 footer_background_color: '#606061'
 ---
