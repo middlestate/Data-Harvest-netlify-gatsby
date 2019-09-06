@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 import '../../assets/sass/styles.sass'
 import config from '../../../config'
 import EmailButton from '../../components/EmailButton/index'
+import ScrollUpButton from '../../components/ScrollUpButton/index'
 
 class Layout extends Component {
   render () {
@@ -14,6 +15,7 @@ class Layout extends Component {
         </Helmet>
         <Fragment>{this.props.children}</Fragment>
         <EmailButton />
+        <ScrollUpButton />
       </Fragment>
     )
   }

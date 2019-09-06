@@ -4,7 +4,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 const EmailButton = () => {
   return (
-    <div className='email_button'>
+    <div className='scroll_up_button'>
       <a href='http://dataharvest.co/#'>
         <FontAwesomeIcon icon={faEnvelope} className='fontawesome_icon' size='2x' />
       </a>
