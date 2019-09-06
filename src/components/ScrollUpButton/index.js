@@ -4,7 +4,7 @@ import { faAngleUp } from '@fortawesome/free-solid-svg-icons'
 
 const ScrollUpButton = () => {
   return (
-    <div className='email_button'>
+    <div className='scroll_up_button'>
       <a href='http://dataharvest.co/#'>
         <FontAwesomeIcon icon={faAngleUp} className='fontawesome_icon' size='2x' />
       </a>
