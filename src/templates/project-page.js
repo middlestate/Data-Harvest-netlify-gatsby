@@ -27,7 +27,7 @@ const ProjectPage = ({data}) => {
         navbar_logo_width_afterScroll={frontmatter.navbar_logo_width_afterScroll}
       />
       <ProjectPageTemplate
-        title={frontmatter.title}
+        dataharvest_title={frontmatter.dataharvest_title}
         lifecycle_title={frontmatter.lifecycle_title}
         lifecycle_description={frontmatter.lifecycle_description}
         stage_1_title={frontmatter.stage_1_title}
@@ -85,7 +85,7 @@ export const pageQuery = graphql`
         navbar_height_afterScroll
         navbar_logo_height_afterScroll
         navbar_logo_width_afterScroll
-        title
+        dataharvest_title
         lifecycle_title
         lifecycle_description
         footer_background_color

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Gallery from '../Gallery/index'
 
 const ProjectPageTemplate = ({
-  title,
+  dataharvest_title,
   lifecycle_title,
   lifecycle_description,
   stage_1_title,
@@ -30,7 +30,7 @@ const ProjectPageTemplate = ({
 }) => (
   <div className='project-page'>
     <section className='project section'>
-      <h1>{title}</h1>
+      <h1>{dataharvest_title}</h1>
     </section>
     <section className='lifecycle section'>
       <h1>{lifecycle_title}</h1>
@@ -92,7 +92,7 @@ const ProjectPageTemplate = ({
 )
 
 ProjectPageTemplate.propTypes = {
-  title: PropTypes.string,
+  dataharvest_title: PropTypes.string,
   lifecycle_title: PropTypes.string,
   lifecycle_description: PropTypes.string,
   stage_1_title: PropTypes.string,

@@ -52,7 +52,7 @@ collections:
         name: "project"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "project-page"}
-          - {label: "Title", name: title, widget: string}
+          - {label: "DataHarvest Title", name: dataharvest_title, widget: string}
           - {label: "Lifecycle Section Title", name: lifecycle_title, widget: string}
           - {label: "Lifecycle Description", name: lifecycle_description, widget: text}
           - {label: "Stage 1 Title", name: stage_1_title, widget: string}
