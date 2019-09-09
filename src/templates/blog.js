@@ -5,6 +5,9 @@ import Helmet from 'react-helmet'
 import PostCard from '../components/PostCard'
 import Layout from '../components/Layout'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebookF, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons'
+
 const PaginationLink = props => {
   if (!props.test) {
     return (
@@ -22,7 +25,47 @@ const PaginationLink = props => {
 }
 
 export default class BlogPage extends Component {
+  constructor (props) {
+    super(props)
+    this.state = {
+      isActive: false,
+      isTop: true,
+    }
+    this.toggleNavbar = this.toggleNavbar.bind(this)
+  }
+
+  componentDidMount () {
+    document.addEventListener('scroll', () => {
+      const isTop = window.scrollY < 100
+      if (isTop !== this.state.isTop) {
+        this.setState({ isTop })
+      }
+    })
+  }
+
+  toggleNavbar () {
+    this.setState({ isActive: !this.state.isActive })
+  }
+
   render () {
+    const navbar_backgroundColor_beforeScroll = 'transparent'
+    const navbar_textColor_beforeScroll = '#ffffff'
+    const navbar_logo_beforeScroll = '/img/dataharvest_logo_white.png'
+    const border_bottom_beforeScroll = 'none'
+    const navbar_height_beforeScroll = '90px'
+    const navbar_logo_height_beforeScroll = '90px'
+    const navbar_logo_width_beforeScroll = '150px'
+
+    const navbar_backgroundColor_afterScroll = 'white'
+    const navbar_textColor_afterScroll = '#444444'
+    const navbar_logo_afterScroll = '/img/dataharvest_logo_green.png'
+    const border_bottom_afterScroll = '1px solid #000000'
+    const navbar_height_afterScroll = '55px'
+    const navbar_logo_height_afterScroll = '55px'
+    const navbar_logo_width_afterScroll = '90px'
+
+    const footer_background_color = '#606061'
+
     const {pageContext} = this.props
     const {group, index, first, last} = pageContext
     const previousUrl = index - 1 === 1 ? '' : (index - 1).toString()
@@ -45,6 +88,96 @@ export default class BlogPage extends Component {
             {JSON.stringify(websiteSchemaOrgJSONLD)}
           </script>
         </Helmet>
+
+        <nav className='navbar is-fixed-top'
+          style={
+            {
+              backgroundColor: `${
+                this.state.isTop
+                  ? navbar_backgroundColor_beforeScroll
+                  : navbar_backgroundColor_afterScroll
+              }`,
+              borderBottom: `${
+                this.state.isTop
+                  ? border_bottom_beforeScroll
+                  : border_bottom_afterScroll
+              }`,
+            }
+          } aria-label='main navigation'>
+
+          <div className='navbar-brand'>
+            <Link to='/' className='navbar-item'>
+              <img src={
+                `${
+                  this.state.isTop
+                    ? navbar_logo_beforeScroll
+                    : navbar_logo_afterScroll
+                }`
+              } style={
+                {
+                  height: `${
+                    this.state.isTop
+                      ? navbar_logo_height_beforeScroll
+                      : navbar_logo_height_afterScroll
+                  }`,
+                  width: `${
+                    this.state.isTop
+                      ? navbar_logo_width_beforeScroll
+                      : navbar_logo_width_afterScroll
+                  }`,
+                }
+              } alt='DataHarvest White Logo' />
+            </Link>
+            <button
+              className={`button navbar-burger ${this.state.isActive ? 'is-active' : ''}`}
+              data-target='navMenu'
+              onClick={this.toggleNavbar}
+            >
+              <span />
+              <span />
+              <span />
+            </button>
+          </div>
+          <div className={`navbar-menu ${this.state.isActive ? 'is-active' : ''}`} id='navMenu'>
+
+            <div className='navbar-end'>
+              {/* <SearchBox searchIndex={data.siteSearchIndex.index} /> */}
+              <Link className='navbar-item' style={
+                {
+                  color: `${
+                    this.state.isTop
+                      ? navbar_textColor_beforeScroll
+                      : navbar_textColor_afterScroll
+                  }`,
+                  height: `${
+                    this.state.isTop
+                      ? navbar_height_beforeScroll
+                      : navbar_height_afterScroll
+                  }`,
+                }
+                /* Changed from /project to /blog */
+              } to='/blog'>
+                Blog
+              </Link>
+              <Link className='navbar-item' style={
+                {
+                  color: `${
+                    this.state.isTop
+                      ? navbar_textColor_beforeScroll
+                      : navbar_textColor_afterScroll
+                  }`,
+                  height: `${
+                    this.state.isTop
+                      ? navbar_height_beforeScroll
+                      : navbar_height_afterScroll
+                  }`,
+                }
+              } to='/about'>
+                About
+              </Link>
+            </div>
+          </div>
+        </nav>
 
         <div className='project-page'>
           <section className='project section'>
@@ -119,6 +252,29 @@ export default class BlogPage extends Component {
           </section>
         </section>
 
+        <footer className='footer' style={{backgroundColor: footer_background_color}}>
+          <div className='container'>
+            <div className='columns'>
+              <div className='column'>
+                <p>Blockchain for the food supply chain realized.</p>
+              </div>
+              <div className='column'>
+                <img src='/img/dataharvest_logo_white_large.png' alt='DataHarvest Large Logo' />
+              </div>
+              <div className='social_media column'>
+                <a href='https://www.facebook.com/DataHarvest.co/'>
+                  <FontAwesomeIcon icon={faFacebookF} className='fontawesome_icon' size='2x' />
+                </a>
+                <a href='https://www.linkedin.com/company/dataharvest.co/'>
+                  <FontAwesomeIcon icon={faLinkedinIn} className='fontawesome_icon' size='2x' />
+                </a>
+                <a href='https://twitter.com/dataharvest'>
+                  <FontAwesomeIcon icon={faTwitter} className='fontawesome_icon' size='2x' />
+                </a>
+              </div>
+            </div>
+          </div>
+        </footer>
       </Layout>
     )
   }
