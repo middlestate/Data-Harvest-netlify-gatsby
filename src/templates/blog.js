@@ -8,21 +8,21 @@ import Layout from '../components/Layout'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons'
 
-// const PaginationLink = props => {
-//   if (!props.test) {
-//     return (
-//       <Link to={`/blog/${props.url}`} className='button is-rounded'>
-//         {props.text}
-//       </Link>
-//     )
-//   } else {
-//     return (
-//       <span disabled className='button is-rounded'>
-//         {props.text}
-//       </span>
-//     )
-//   }
-// }
+const PaginationLink = props => {
+  if (!props.test) {
+    return (
+      <Link to={`/blog/${props.url}`} className='button is-rounded'>
+        {props.text}
+      </Link>
+    )
+  } else {
+    return (
+      <span disabled className='button is-rounded'>
+        {props.text}
+      </span>
+    )
+  }
+}
 
 export default class BlogPage extends Component {
   constructor (props) {
@@ -67,9 +67,9 @@ export default class BlogPage extends Component {
     const footer_background_color = '#606061'
 
     const {pageContext} = this.props
-    const {group} = pageContext /* removed index, first, last variables from object */
-    // const previousUrl = index - 1 === 1 ? '' : (index - 1).toString()
-    // const nextUrl = (index + 1).toString() + '/'
+    const {group, index, first, last} = pageContext /* removed index, first, last variables from object */
+    const previousUrl = index - 1 === 1 ? '' : (index - 1).toString()
+    const nextUrl = (index + 1).toString() + '/'
 
     const websiteSchemaOrgJSONLD = {
       '@context': 'http://schema.org',
@@ -241,14 +241,12 @@ export default class BlogPage extends Component {
              */}
             <section className='section'>
               <PostCard posts={group} />
-              {/*
-                <section className='section'>
-                  <div className='buttons is-centered'>
-                    <PaginationLink test={first} url={previousUrl} text='Previous Page' />
-                    <PaginationLink test={last} url={nextUrl} text='Next Page' />
-                  </div>
-                </section>
-              */}
+              <section className='section'>
+                <div className='buttons is-centered'>
+                  <PaginationLink test={first} url={previousUrl} text='Previous Page' />
+                  <PaginationLink test={last} url={nextUrl} text='Next Page' />
+                </div>
+              </section>
             </section>
           </section>
         </div>
