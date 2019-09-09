@@ -109,8 +109,9 @@ class NavBar extends React.Component {
                     : navbar_height_afterScroll
                 }`,
               }
-            } to='/project'>
-              Project
+              /* Changed from /project to /blog */
+            } to='/blog'>
+              Blog
             </Link>
             <Link className='navbar-item' style={
               {

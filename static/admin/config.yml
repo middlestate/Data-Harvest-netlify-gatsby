@@ -47,32 +47,48 @@ collections:
           - {label: "Team Member", name: member_4, widget: string}
           - {label: "Button Heading", name: button_heading, widget: string}
 
-      - file: "src/pages/project/index.md"
-        label: "Project"
-        name: "project"
-        fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "project-page"}
-          - {label: "DataHarvest Title", name: dataharvest_title, widget: string}
-          - {label: "Lifecycle Section Title", name: lifecycle_title, widget: string}
-          - {label: "Lifecycle Description", name: lifecycle_description, widget: text}
-          - {label: "Stage 1 Title", name: stage_1_title, widget: string}
-          - {label: "Stage 1 Image", name: stage_1_image, widget: image}
-          - {label: "Stage 1 Image After", name: stage_1_image_after, widget: image}
-          - {label: "Stage 2 Title", name: stage_2_title, widget: string}
-          - {label: "Stage 2 Image", name: stage_2_image, widget: image}
-          - {label: "Stage 2 Image After", name: stage_2_image_after, widget: image}
-          - {label: "Stage 3 Title", name: stage_3_title, widget: string}
-          - {label: "Stage 3 Image", name: stage_3_image, widget: image}
-          - {label: "Stage 3 Image After", name: stage_3_image_after, widget: image}
-          - {label: "Stage 4 Title", name: stage_4_title, widget: string}
-          - {label: "Stage 4 Image", name: stage_4_image, widget: image}
-          - {label: "Stage 4 Image After", name: stage_4_image_after, widget: image}
-          - {label: "Stage 5 Title", name: stage_5_title, widget: string}
-          - {label: "Stage 5 Image", name: stage_5_image, widget: image}
-          - {label: "Stage 5 Image After", name: stage_5_image_after, widget: image}
-          - {label: "Stage 6 Title", name: stage_6_title, widget: string}
-          - {label: "Stage 6 Image", name: stage_6_image, widget: image}
-          - {label: "Stage 6 Image After", name: stage_6_image_after, widget: image}
-          - {label: "Features Section Title", name: features_title, widget: string}
-          - {label: "Features Subtitle", name: features_subtitle, widget: string}
-          - {label: Gallery, name: gallery, widget: object, fields: [{label: Images, name: images, widget: list, fields:[{label: Image, name: image, widget: image}, {label: Project Title, name: project_title, widget: string}]}]}
+      # - file: "src/pages/project/index.md"
+      #   label: "Project"
+      #   name: "project"
+      #   fields:
+      #     - {label: "Template Key", name: "templateKey", widget: "hidden", default: "project-page"}
+      #     - {label: "DataHarvest Title", name: dataharvest_title, widget: string}
+      #     - {label: "Lifecycle Section Title", name: lifecycle_title, widget: string}
+      #     - {label: "Lifecycle Description", name: lifecycle_description, widget: text}
+      #     - {label: "Stage 1 Title", name: stage_1_title, widget: string}
+      #     - {label: "Stage 1 Image", name: stage_1_image, widget: image}
+      #     - {label: "Stage 1 Image After", name: stage_1_image_after, widget: image}
+      #     - {label: "Stage 2 Title", name: stage_2_title, widget: string}
+      #     - {label: "Stage 2 Image", name: stage_2_image, widget: image}
+      #     - {label: "Stage 2 Image After", name: stage_2_image_after, widget: image}
+      #     - {label: "Stage 3 Title", name: stage_3_title, widget: string}
+      #     - {label: "Stage 3 Image", name: stage_3_image, widget: image}
+      #     - {label: "Stage 3 Image After", name: stage_3_image_after, widget: image}
+      #     - {label: "Stage 4 Title", name: stage_4_title, widget: string}
+      #     - {label: "Stage 4 Image", name: stage_4_image, widget: image}
+      #     - {label: "Stage 4 Image After", name: stage_4_image_after, widget: image}
+      #     - {label: "Stage 5 Title", name: stage_5_title, widget: string}
+      #     - {label: "Stage 5 Image", name: stage_5_image, widget: image}
+      #     - {label: "Stage 5 Image After", name: stage_5_image_after, widget: image}
+      #     - {label: "Stage 6 Title", name: stage_6_title, widget: string}
+      #     - {label: "Stage 6 Image", name: stage_6_image, widget: image}
+      #     - {label: "Stage 6 Image After", name: stage_6_image_after, widget: image}
+      #     - {label: "Features Section Title", name: features_title, widget: string}
+      #     - {label: "Features Subtitle", name: features_subtitle, widget: string}
+      #     - {label: Gallery, name: gallery, widget: object, fields: [{label: Images, name: images, widget: list, fields:[{label: Image, name: image, widget: image}, {label: Project Title, name: project_title, widget: string}]}]}
+
+  - name: "blog"
+    label: "Blog"
+    folder: "src/pages/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "article-page"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Slug", name: "slug", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Cover", name: "cover", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Meta Title", name: "meta_title", widget: "string"}
+      - {label: "Meta Description", name: "meta_description", widget: "text"}
