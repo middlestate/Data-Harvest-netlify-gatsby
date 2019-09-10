@@ -13,7 +13,7 @@ avocado_description: >-
   The PureChex Project is working with global leader from the public and private
   sector to test and learn. 
    From UC Riverside’s Avocado Improvement Program (AVIP) to major fruit marketers like ASOEX, To sensor manufacturers like Most, we have also brought in new modern farm data direct to consumers.
-avocado_image: /img/avocado.png
+avocado_image: /img/purechex_logo4-02.png
 intel_image: /img/intel.png
 hyperledger_image: /img/hyperledger.png
 IBM_image: /img/purechex_logo4-02.png
