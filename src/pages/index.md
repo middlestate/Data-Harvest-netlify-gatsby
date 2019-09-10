@@ -16,7 +16,7 @@ avocado_description: >-
 avocado_image: /img/avocado.png
 intel_image: /img/intel.png
 hyperledger_image: /img/hyperledger.png
-IBM_image: /img/ibm.png
+IBM_image: /img/purechex_logo4-02.png
 linux_image: /img/linux.png
 spotlight_image: /img/avocado_tree.png
 spotlight_heading: 'DataHarvest Spotlight: On The Farm'
