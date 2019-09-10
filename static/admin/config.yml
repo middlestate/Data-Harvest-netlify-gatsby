@@ -76,3 +76,13 @@ collections:
           - {label: "Features Section Title", name: features_title, widget: string}
           - {label: "Features Subtitle", name: features_subtitle, widget: string}
           - {label: Gallery, name: gallery, widget: object, fields: [{label: Images, name: images, widget: list, fields:[{label: Image, name: image, widget: image}, {label: Project Title, name: project_title, widget: string}]}]}
+
+      - file: "src/pages/firstblockledger/index.md"
+        label: "FirstBlock Ledger"
+        name: "firstblockledger"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "firstblockledger"}
+          - {label: "Project Title", name: project_title, widget: string}
+          - {label: "Project Description Paragraph 1", name: project_description_p1, widget: text}
+          - {label: "Project Description Paragraph 2", name: project_description_p2, widget: text}
+          - {label: "Project Description Paragraph 3", name: project_description_p3, widget: text}
