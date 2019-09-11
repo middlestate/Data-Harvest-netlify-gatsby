@@ -12,6 +12,7 @@ import FirstBlockLedgerPagePreview from './preview-templates/FirstBlockLedgerPag
 import SecurityPagePreview from './preview-templates/SecurityPagePreview'
 import LaborCommunicationsPagePreview from './preview-templates/LaborCommunicationsPagePreview'
 import SanCredosPagePreview from './preview-templates/SanCredosPagePreview'
+import PrimeGloryPagePreview from './preview-templates/PrimeGloryPagePreview'
 
 CMS.registerPreviewStyle('/styles.css')
 CMS.registerPreviewTemplate('home', HomePagePreview)
@@ -25,3 +26,4 @@ CMS.registerPreviewTemplate('firstblockledger', FirstBlockLedgerPagePreview)
 CMS.registerPreviewTemplate('security', SecurityPagePreview)
 CMS.registerPreviewTemplate('laborcommunications', LaborCommunicationsPagePreview)
 CMS.registerPreviewTemplate('sancredos', SanCredosPagePreview)
+CMS.registerPreviewTemplate('primeglory', PrimeGloryPagePreview)
