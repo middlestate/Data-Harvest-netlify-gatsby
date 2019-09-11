@@ -81,7 +81,7 @@ collections:
         label: "FirstBlock Ledger"
         name: "firstblockledger"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "firstblockledger"}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "firstblockledger-page"}
           - {label: "Project Title", name: project_title, widget: string}
           - {label: "Project Description Paragraph 1", name: project_description_p1, widget: text}
           - {label: "Project Description Paragraph 2", name: project_description_p2, widget: text}
@@ -91,7 +91,7 @@ collections:
         label: "Security"
         name: "security"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "security"}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "security-page"}
           - {label: "Project Title", name: project_title, widget: string}
           - {label: "Project Description Paragraph 1", name: project_description_p1, widget: text}
           - {label: "Project Description Paragraph 2", name: project_description_p2, widget: text}
@@ -101,7 +101,7 @@ collections:
         label: "Labor Communications"
         name: "laborcommunications"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "laborcommunications"}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "laborcommunications-page"}
           - {label: "Project Title", name: project_title, widget: string}
           - {label: "Project Description Paragraph 1", name: project_description_p1, widget: text}
           - {label: "Project Description Paragraph 2", name: project_description_p2, widget: text}
@@ -111,7 +111,7 @@ collections:
         label: "San Credos"
         name: "sancredos"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "sancredos"}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "sancredos-page"}
           - {label: "Project Title", name: project_title, widget: string}
           - {label: "Project Description Paragraph 1", name: project_description_p1, widget: text}
           - {label: "Project Description Paragraph 2", name: project_description_p2, widget: text}
@@ -121,7 +121,7 @@ collections:
         label: "Prime Glory"
         name: "primeglory"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "primeglory"}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "primeglory-page"}
           - {label: "Project Title", name: project_title, widget: string}
           - {label: "Project Description Paragraph 1", name: project_description_p1, widget: text}
           - {label: "Project Description Paragraph 2", name: project_description_p2, widget: text}
@@ -131,7 +131,7 @@ collections:
         label: "AVIP"
         name: "avip"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "avip"}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "avip-page"}
           - {label: "Project Title", name: project_title, widget: string}
           - {label: "Project Description Paragraph 1", name: project_description_p1, widget: text}
           - {label: "Project Description Paragraph 2", name: project_description_p2, widget: text}
