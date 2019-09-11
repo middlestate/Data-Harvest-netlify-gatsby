@@ -101,7 +101,17 @@ collections:
         label: "Labor Communications"
         name: "laborcommunications"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "security"}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "laborcommunications"}
+          - {label: "Project Title", name: project_title, widget: string}
+          - {label: "Project Description Paragraph 1", name: project_description_p1, widget: text}
+          - {label: "Project Description Paragraph 2", name: project_description_p2, widget: text}
+          - {label: "Project Description Paragraph 3", name: project_description_p3, widget: text}
+
+      - file: "src/pages/sancredos/index.md"
+        label: "San Credos"
+        name: "sancredos"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "sancredos"}
           - {label: "Project Title", name: project_title, widget: string}
           - {label: "Project Description Paragraph 1", name: project_description_p1, widget: text}
           - {label: "Project Description Paragraph 2", name: project_description_p2, widget: text}
