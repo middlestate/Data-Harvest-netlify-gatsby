@@ -10,6 +10,7 @@ import ContactPagePreview from './preview-templates/ContactPagePreview'
 /* Gallery Image Pages */
 import FirstBlockLedgerPagePreview from './preview-templates/FirstBlockLedgerPagePreview'
 import SecurityPagePreview from './preview-templates/SecurityPagePreview'
+import LaborCommunicationsPagePreview from './preview-templates/LaborCommunicationsPagePreview'
 
 CMS.registerPreviewStyle('/styles.css')
 CMS.registerPreviewTemplate('home', HomePagePreview)
@@ -21,3 +22,4 @@ CMS.registerPreviewTemplate('blog', ArticlePreview)
 
 CMS.registerPreviewTemplate('firstblockledger', FirstBlockLedgerPagePreview)
 CMS.registerPreviewTemplate('security', SecurityPagePreview)
+CMS.registerPreviewTemplate('laborcommunications', LaborCommunicationsPagePreview)
