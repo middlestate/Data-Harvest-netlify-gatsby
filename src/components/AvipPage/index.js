@@ -2,13 +2,14 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const AvipPage = ({
+  project_background_image,
   project_title,
   project_description_p1,
   project_description_p2,
   project_description_p3,
 }) => (
   <div className='gallery_image_page'>
-    <section className='project_hero section'>
+    <section className='project_hero section' style={{backgroundImage: `url(${project_background_image})`}}>
       <h1 className='project_title'>{project_title}</h1>
     </section>
     <section className='project_description_container section'>

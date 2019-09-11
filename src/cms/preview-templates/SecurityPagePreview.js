@@ -4,6 +4,7 @@ import SecurityPage from '../../components/SecurityPage'
 
 const SecurityPagePreview = ({ entry, widgetFor }) => (
   <SecurityPage
+    project_background_image={entry.getIn(['data', 'project_background_image'])}
     project_title={entry.getIn(['data', 'project_title'])}
     project_description_p1={entry.getIn(['data', 'project_description_p1'])}
     project_description_p2={entry.getIn(['data', 'project_description_p2'])}

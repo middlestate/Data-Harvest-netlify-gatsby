@@ -27,12 +27,13 @@ const FirstBlockLedgerPageTemplate = ({data}) => {
         navbar_logo_width_afterScroll={frontmatter.navbar_logo_width_afterScroll}
       />
       <FirstBlockLedgerPage
+        project_background_image={frontmatter.project_background_image}
         project_title={frontmatter.project_title}
         project_description_p1={frontmatter.project_description_p1}
         project_description_p2={frontmatter.project_description_p2}
         project_description_p3={frontmatter.project_description_p3}
       />
-      <Footer footer_background_color={frontmatter.footer_background_color} />  
+      <Footer footer_background_color={frontmatter.footer_background_color} />
     </Layout>
   )
 }
@@ -66,6 +67,7 @@ export const pageQuery = graphql`
         navbar_logo_height_afterScroll
         navbar_logo_width_afterScroll
         footer_background_color
+        project_background_image
         project_title
         project_description_p1
         project_description_p2

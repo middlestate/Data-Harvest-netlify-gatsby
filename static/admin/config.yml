@@ -82,6 +82,7 @@ collections:
         name: "firstblockledger"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "firstblockledger-page"}
+          - {label: "Project Background Image", name: project_background_image, widget: image}
           - {label: "Project Title", name: project_title, widget: string}
           - {label: "Project Description Paragraph 1", name: project_description_p1, widget: text}
           - {label: "Project Description Paragraph 2", name: project_description_p2, widget: text}
@@ -92,6 +93,7 @@ collections:
         name: "security"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "security-page"}
+          - {label: "Project Background Image", name: project_background_image, widget: image}
           - {label: "Project Title", name: project_title, widget: string}
           - {label: "Project Description Paragraph 1", name: project_description_p1, widget: text}
           - {label: "Project Description Paragraph 2", name: project_description_p2, widget: text}
@@ -102,6 +104,7 @@ collections:
         name: "laborcommunications"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "laborcommunications-page"}
+          - {label: "Project Background Image", name: project_background_image, widget: image} 
           - {label: "Project Title", name: project_title, widget: string}
           - {label: "Project Description Paragraph 1", name: project_description_p1, widget: text}
           - {label: "Project Description Paragraph 2", name: project_description_p2, widget: text}
@@ -112,6 +115,7 @@ collections:
         name: "sancredos"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "sancredos-page"}
+          - {label: "Project Background Image", name: project_background_image, widget: image}
           - {label: "Project Title", name: project_title, widget: string}
           - {label: "Project Description Paragraph 1", name: project_description_p1, widget: text}
           - {label: "Project Description Paragraph 2", name: project_description_p2, widget: text}
@@ -122,6 +126,7 @@ collections:
         name: "primeglory"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "primeglory-page"}
+          - {label: "Project Background Image", name: project_background_image, widget: image}
           - {label: "Project Title", name: project_title, widget: string}
           - {label: "Project Description Paragraph 1", name: project_description_p1, widget: text}
           - {label: "Project Description Paragraph 2", name: project_description_p2, widget: text}
@@ -132,6 +137,7 @@ collections:
         name: "avip"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "avip-page"}
+          - {label: "Project Background Image", name: project_background_image, widget: image}
           - {label: "Project Title", name: project_title, widget: string}
           - {label: "Project Description Paragraph 1", name: project_description_p1, widget: text}
           - {label: "Project Description Paragraph 2", name: project_description_p2, widget: text}
