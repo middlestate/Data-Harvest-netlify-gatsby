@@ -113,6 +113,7 @@ export const pageQuery = graphql`
           images {
             image
             project_title
+            url
           }
         }
       }

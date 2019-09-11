@@ -41,15 +41,21 @@ gallery:
   images:
     - image: /img/firstblock_ledger.jpg
       project_title: Firstblock Ledger
+      url: /firstblockledger/
     - image: /img/security.png
       project_title: Security
+      url: /security/
     - image: /img/labor_communications.png
       project_title: Labor Communications
+      url: /laborcommunications/
     - image: /img/san_credos.jpeg
       project_title: San Credos
+      url: /sancredos/
     - image: /img/prime_glory.jpg
       project_title: Prime Glory
+      url: /primeglory/
     - image: /img/AVIP.jpeg
       project_title: AVIP
+      url: /avip/
 footer_background_color: '#606061'
 ---
