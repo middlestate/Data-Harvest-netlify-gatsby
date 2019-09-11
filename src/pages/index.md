@@ -17,7 +17,7 @@ avocado_image: /img/16.png
 intel_image: /img/university_of_california-_riverside_logo.svg
 hyperledger_image: /img/purechex_logo4-02.png
 IBM_image: /img/nclouds-logo.svg
-linux_image: /img/gate.cl.png
+linux_image: /img/gate.cl-sm.png
 spotlight_image: /img/avocado_tree.png
 spotlight_heading: 'DataHarvest Spotlight: On The Farm'
 spotlight_subheading: Answering the question of ‘how?’ on the nursery
