@@ -14,7 +14,7 @@ avocado_description: >-
   sector to test and learn. 
    From UC Riverside’s Avocado Improvement Program (AVIP) to major fruit marketers like ASOEX, to sensor manufacturers. We are building a landing place for the data to travel with your products.  PureChex is a authentic new channel for producers to build relationships that matter.
 avocado_image: /img/16.png
-intel_image: /img/intel.png
+intel_image: /img/university_of_california-_riverside_logo.svg
 hyperledger_image: /img/purechex_logo4-02.png
 IBM_image: /img/nclouds-logo.svg
 linux_image: /img/linux.png
