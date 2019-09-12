@@ -27,5 +27,6 @@ spotlight_description: >-
   best-in-industry network solutions that will be foundational as we expand what
   data we are capturing. Would you like to work with us, or do you have
   questions about our project?
+footer_background_color: '#83aa81'
 ---
 
