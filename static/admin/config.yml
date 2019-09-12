@@ -29,21 +29,21 @@ collections:
           - {label: "navbar_height_afterScroll", name: "navbar_height_afterScroll", widget: "hidden", default: "55px"}
           - {label: "navbar_logo_height_afterScroll", name: "navbar_logo_height_afterScroll", widget: "hidden", default: "55px"}
           - {label: "navbar_logo_width_afterScroll", name: "navbar_logo_width_afterScroll", widget: "hidden", default: "90px"}
-          - {label: Header Title Image, name: header_title_image, widget: image}
-          - {label: Subheading Part 1, name: subheading_part1, widget: string}
-          - {label: Subheading Part 2, name: subheading_part2, widget: string}
-          - {label: Avocado Heading, name: avocado_heading, widget: string}
-          - {label: Avocado Subheading, name: avocado_subheading, widget: string}
-          - {label: Avocado Description, name: avocado_description, widget: text}
-          - {label: Avocado Image, name: avocado_image, widget: image}
-          - {label: Affiliate Image, name: intel_image, widget: image}
-          - {label: Affiliate Image, name: hyperledger_image, widget: image}
-          - {label: Affiliate Image, name: IBM_image, widget: image}
-          - {label: Affiliate Image, name: linux_image, widget: image}
-          - {label: Spotlight Image, name: spotlight_image, widget: image}
-          - {label: Spotlight Heading, name: spotlight_heading, widget: string}
-          - {label: Spotlight Subheading, name: spotlight_subheading, widget: string}
-          - {label: Spotlight Description, name: spotlight_description, widget: text}
+          - {label: "Header Title Image", name: header_title_image, widget: image}
+          - {label: "Subheading Part 1", name: subheading_part1, widget: string}
+          - {label: "Subheading Part 2", name: subheading_part2, widget: string}
+          - {label: "Avocado Heading", name: avocado_heading, widget: string}
+          - {label: "Avocado Subheading", name: avocado_subheading, widget: string}
+          - {label: "Avocado Description", name: avocado_description, widget: text}
+          - {label: "Avocado Image", name: avocado_image, widget: image}
+          - {label: "Affiliate Image", name: intel_image, widget: image}
+          - {label: "Affiliate Image", name: hyperledger_image, widget: image}
+          - {label: "Affiliate Image", name: IBM_image, widget: image}
+          - {label: "Affiliate Image", name: linux_image, widget: image}
+          - {label: "Spotlight Image", name: spotlight_image, widget: image}
+          - {label: "Spotlight Heading", name: spotlight_heading, widget: string}
+          - {label: "Spotlight Subheading", name: spotlight_subheading, widget: string}
+          - {label: "Spotlight Description", name: spotlight_description, widget: text}
 	        - {label: "footer_background_color", name: "footer_background_color", widget: "hidden", default: "#83aa81"}
 
       - file: "src/pages/about/index.md"
@@ -65,7 +65,7 @@ collections:
           - {label: "navbar_height_afterScroll", name: "navbar_height_afterScroll", widget: "hidden", default: "55px"}
           - {label: "navbar_logo_height_afterScroll", name: "navbar_logo_height_afterScroll", widget: "hidden", default: "55px"}
           - {label: "navbar_logo_width_afterScroll", name: "navbar_logo_width_afterScroll", widget: "hidden", default: "90px"}
-          - {label: About Image, name: about_image, widget: image}
+          - {label: "About Image", name: about_image, widget: image}
           - {label: "Title", name: title, widget: string}
           - {label: "Description", name: description, widget: text}
           - {label: "Subheading", name: subheading, widget: string}
