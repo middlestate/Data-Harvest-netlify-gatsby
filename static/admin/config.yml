@@ -81,6 +81,20 @@ collections:
         name: "project"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "project-page"}
+          - {label: "navbar_backgroundColor_beforeScroll", name: "navbar_backgroundColor_beforeScroll", widget: "hidden", default: "transparent"}
+          - {label: "navbar_textColor_beforeScroll", name: "navbar_textColor_beforeScroll", widget: "hidden", default: "#ffffff"}
+          - {label: "navbar_logo_beforeScroll", name: "navbar_logo_beforeScroll", widget: "hidden", default: "/img/dataharvest_logo_white.png"}
+          - {label: "border_bottom_beforeScroll", name: "border_bottom_beforeScroll", widget: "hidden", default: "none"}
+          - {label: "navbar_height_beforeScroll", name: "navbar_height_beforeScroll", widget: "hidden", default: "90px"}
+          - {label: "navbar_logo_height_beforeScroll", name: "navbar_logo_height_beforeScroll", widget: "hidden", default: "90px"}
+          - {label: "navbar_logo_width_beforeScroll", name: "navbar_logo_width_beforeScroll", widget: "hidden", default: "150px"}
+          - {label: "navbar_backgroundColor_afterScroll", name: "navbar_backgroundColor_afterScroll", widget: "hidden", default: "white"}
+          - {label: "navbar_textColor_afterScroll", name: "navbar_textColor_afterScroll", widget: "hidden", default: "#444444"}
+          - {label: "navbar_logo_afterScroll", name: "navbar_logo_afterScroll", widget: "hidden", default: "/img/dataharvest_logo_green.png"}
+          - {label: "border_bottom_afterScroll", name: "border_bottom_afterScroll", widget: "hidden", default: "1px solid #000000"}
+          - {label: "navbar_height_afterScroll", name: "navbar_height_afterScroll", widget: "hidden", default: "55px"}
+          - {label: "navbar_logo_height_afterScroll", name: "navbar_logo_height_afterScroll", widget: "hidden", default: "55px"}
+          - {label: "navbar_logo_width_afterScroll", name: "navbar_logo_width_afterScroll", widget: "hidden", default: "90px"}
           - {label: "DataHarvest Title", name: dataharvest_title, widget: string}
           - {label: "Lifecycle Section Title", name: lifecycle_title, widget: string}
           - {label: "Lifecycle Description", name: lifecycle_description, widget: text}
@@ -105,6 +119,7 @@ collections:
           - {label: "Features Section Title", name: features_title, widget: string}
           - {label: "Features Subtitle", name: features_subtitle, widget: string}
           - {label: Gallery, name: gallery, widget: object, fields: [{label: Images, name: images, widget: list, fields:[{label: Image, name: image, widget: image}, {label: Project Title, name: project_title, widget: string}]}]}
+          - {label: "footer_background_color", name: "footer_background_color", widget: "hidden", default: "#606061"}
 
       - file: "src/pages/firstblockledger/index.md"
         label: "FirstBlock Ledger"
