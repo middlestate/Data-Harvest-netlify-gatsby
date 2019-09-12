@@ -12,13 +12,13 @@ project_description_p1: >+
 project_description_p2: |2
    Overall themes built on new tool focus:
 
-  Trust 
-  Reputation
-  Transactions 
-  Distributed 
-  Participation 
-  Portable benefits
-  New Ownership models
+  *Trust 
+  *Reputation
+  *Transactions 
+  *Distributed 
+  *Participation 
+  *Portable benefits
+  *New Ownership models
 project_description_p3: ' '
 ---
 
