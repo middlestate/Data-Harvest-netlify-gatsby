@@ -10,10 +10,14 @@ const Gallery = ({ gridItems }, keys) => {
           {gridItems.map(({ image, project_title, url }, keys) => {
             return (
               <div key={keys} className='column is-4'>
-                <h1>{project_title}</h1>
+                <h1>
+                  <Link to={url} className='project_title_link'>
+                    {project_title}
+                  </Link>
+                </h1>
                 <div className='image_container'>
                   <Link to={url}>
-                    <img src={image} className='gallery_image' alt='project image' />                  
+                    <img src={image} className='gallery_image' alt='project image' />
                   </Link>
                 </div>
               </div>
