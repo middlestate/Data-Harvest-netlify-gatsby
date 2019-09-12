@@ -33,7 +33,7 @@ const PrimeGloryPageTemplate = ({data}) => {
         project_description_p2={frontmatter.project_description_p2}
         project_description_p3={frontmatter.project_description_p3}
       />
-      <Footer footer_background_color={frontmatter.footer_background_color} /> 
+      <Footer footer_background_color={frontmatter.footer_background_color} />
     </Layout>
 
   )
