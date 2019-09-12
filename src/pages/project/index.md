@@ -45,7 +45,7 @@ gallery:
     - image: /img/security.png
       project_title: Security
       url: /security/
-    - image: /img/labor_communications.png
+    - image: /img/labor_communications.jpg
       project_title: Labor Communications
       url: /laborcommunications/
     - image: /img/san_credos.jpeg
