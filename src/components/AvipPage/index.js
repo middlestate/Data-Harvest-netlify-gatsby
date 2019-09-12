@@ -9,7 +9,7 @@ const AvipPage = ({
   project_description_p3,
 }) => (
   <div className='gallery_image_page'>
-    <section className='project_hero section' style={{background: `linear-gradient(rgba(0,0,0, .5),rgba(0,0,0, .5)),url(${project_background_image})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat'}}>
+    <section className='project_hero section' style={{background: `linear-gradient(rgba(0,0,0, .5),rgba(0,0,0, .5)),url(${project_background_image})`, backgroundSize: 'cover', backgroundPosition: 'center bottom', backgroundRepeat: 'no-repeat'}}>
       <h1 className='project_title'>{project_title}</h1>
     </section>
     <section className='project_description_container section'>
