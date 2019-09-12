@@ -118,7 +118,7 @@ collections:
           - {label: "Stage 6 Image After", name: stage_6_image_after, widget: image}
           - {label: "Features Section Title", name: features_title, widget: string}
           - {label: "Features Subtitle", name: features_subtitle, widget: string}
-          - {label: Gallery, name: gallery, widget: object, fields: [{label: Images, name: images, widget: list, fields:[{label: Image, name: image, widget: image}, {label: Project Title, name: project_title, widget: string}]}]}
+          - {label: Gallery, name: gallery, widget: object, fields: [{label: Images, name: images, widget: list, fields:[{label: Image, name: image, widget: image}, {label: Project Title, name: project_title, widget: string}, {label: url, name: url, widget: hidden}]}]}
           - {label: "footer_background_color", name: "footer_background_color", widget: "hidden", default: "#606061"}
 
       - file: "src/pages/firstblockledger/index.md"
