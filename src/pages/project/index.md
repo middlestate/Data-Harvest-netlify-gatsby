@@ -62,7 +62,7 @@ gallery:
       project_title: PureChex
       url: /sancredos/
     - image: /img/prime_glory.jpg
-      project_title: Prime Glory
+      project_title: Laboratory Partners
       url: /primeglory/
     - image: /img/AVIP.jpeg
       project_title: AVIP
