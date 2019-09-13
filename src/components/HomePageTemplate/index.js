@@ -23,7 +23,7 @@ const HomePageTemplate = ({
     <section className='hero section'>
     <div className='videoBackground'>
       <video playsInline autoPlay muted loop poster=''>
-        <source src='/static/img/DataHarvest_hero.mp4' type='video/mp4' />
+        <source src='/static/img/dataharvest_hero.mp4' type='video/mp4' />
       </video>
     </div>
       <div className='container'>
