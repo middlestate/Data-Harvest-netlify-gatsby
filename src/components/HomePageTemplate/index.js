@@ -21,9 +21,15 @@ const HomePageTemplate = ({
 }) => (
   <div>
     <section className='hero section'>
-      <video className='VideoTag' autoPlay loop muted>
-        <source src='https://vimeo.com/user86900467/review/356497375/5a49e6026a' type='video/mp4' />
-      </video>
+      <div style={{padding: '56.25% 0 0 0', position: 'relative'}}>
+        <iframe
+          src='https://player.vimeo.com/video/359851936'
+          style={{position: 'absolute', top: '0', left: '0', width: '100%', height: '100%'}}
+          frameBorder='0'
+          allow='autoplay; fullscreen'
+          allowFullScreen
+        />
+      </div>
       <div className='container'>
         <div className='columns'>
           <div className='column'>
