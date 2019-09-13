@@ -16,7 +16,7 @@ navbar_logo_height_afterScroll: 55px
 navbar_logo_width_afterScroll: 90px
 header_title_image: /img/headertitle.png
 subheading_part1: >-
-  We are a blockchain company that builds tools to empower producers to tell
+  We are a blockchain company that build tools to empower producers to tell
   their story.
 subheading_part2: We are telling the story of the products in your life
 avocado_heading: The Smart Wallet the tells the story of food
