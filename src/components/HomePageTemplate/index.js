@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {Link} from 'gatsby'
-import dataharvest_hero from '/static/img/dataharvest_hero.mp4'
+import dataharvest_hero from '../../assets/img/dataharvest_hero.mp4'
 
 const HomePageTemplate = ({
   header_title_image,
