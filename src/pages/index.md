@@ -18,7 +18,7 @@ header_title_image: /img/headertitle.png
 subheading_part1: >-
   We are a blockchain company that builds tools to empower producers to tell
   their story.
-subheading_part2: We are telling the story for the products in your life
+subheading_part2: We are telling the story of the products in your life
 avocado_heading: The Smart Wallet the tells the story of food
 avocado_subheading: >-
   A purpose built network of collaborators building a truly open blockchain to
