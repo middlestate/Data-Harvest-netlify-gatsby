@@ -21,15 +21,11 @@ const HomePageTemplate = ({
 }) => (
   <div>
     <section className='hero section'>
-      <div style={{padding: '56.25% 0 0 0', position: 'relative'}}>
-        <iframe
-          src='https://player.vimeo.com/video/359851936'
-          style={{position: 'absolute', top: '0', left: '0', width: '100%', height: '100%'}}
-          frameBorder='0'
-          allow='autoplay; fullscreen'
-          allowFullScreen
-        />
-      </div>
+    <div className='videoBackground'>
+      <video playsInline autoPlay muted loop poster=''>
+        <source src='/static/img/DataHarvest_hero.mp4' type='video/mp4' />
+      </video>
+    </div>
       <div className='container'>
         <div className='columns'>
           <div className='column'>
