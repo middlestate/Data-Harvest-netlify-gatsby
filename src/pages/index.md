@@ -14,11 +14,9 @@ border_bottom_afterScroll: '1px solid #000000'
 navbar_height_afterScroll: 55px
 navbar_logo_height_afterScroll: 55px
 navbar_logo_width_afterScroll: 90px
-header_title_image: /img/headertitle.png
-subheading_part1: >-
-  We are a blockchain company that build tools to empower producers to tell
-  their story.
-subheading_part2: We are telling the story of the products in your life
+header_title_image: /img/headertitle-02.png
+subheading_part1: 'Building tools to help tell the story of the products in your life '
+subheading_part2: ' '
 avocado_heading: The Smart Wallet the tells the story of food
 avocado_subheading: >-
   A purpose built network of collaborators building a truly open blockchain to
