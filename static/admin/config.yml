@@ -274,7 +274,6 @@ collections:
           - {label: "Project Description Paragraph 1", name: project_description_p1, widget: text}
           - {label: "Project Description Paragraph 2", name: project_description_p2, widget: text}
           - {label: "Project Description Paragraph 3", name: project_description_p3, widget: text}
-<<<<<<< HEAD
   - name: "blog"
     label: "Blog"
     folder: "src/pages/blog"
@@ -289,6 +288,3 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Meta Title", name: "meta_title", widget: "string"}
       - {label: "Meta Description", name: "meta_description", widget: "text"}
-=======
-          - {label: "footer_background_color", name: "footer_background_color", widget: "hidden", default: "#606061"}
->>>>>>> master
