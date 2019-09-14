@@ -22,11 +22,15 @@ const HomePageTemplate = ({
 }) => (
   <div>
     <section className='hero section'>
-    <div className='videoBackground'>
-      <video playsInline autoPlay muted loop poster=''>
-        <source src={dataharvest_hero} type='video/mp4' />
-      </video>
-    </div>
+      <div className='hero is-fullheight'>
+        <div className='hero-video'>
+          <div className='is-hidden-mobile'>
+            <video playsInline autoPlay muted loop poster=''>
+              <source src={dataharvest_hero} type='video/mp4' />
+            </video>
+          </div>
+        </div>
+      </div>
       <div className='container'>
         <div className='columns'>
           <div className='column'>
