@@ -12,34 +12,6 @@ $about-section-padding-medium: 16rem 1.5rem
 html
   scroll-behavior: smooth
 
-.hero-video video
-  position: relative
-  left: auto
-  top: auto
-  transform: none
-  width: 100vw
-  background-size: cover
-  z-index: 2
-
-
-.hurricane-maria
-  position: relative
-  top: auto
-  left: auto
-  height: 100%
-  width: 100%
-  z-index: -100
-
-
-.maria-container
-  position: absolute
-  top: 0
-  left: 0
-  height: 100%
-  width: 100%
-  filter: opacity(1)
-  z-index: -100
-
 .email_button
   position: fixed
   bottom: 20px
@@ -136,11 +108,30 @@ nav
   background-color: gray
   opacity: 1
 
+.hero-video video
+  position: relative
+  left: auto
+  top: auto
+  transform: none
+  width: 100vw
+  background-size: cover
+  z-index: 2
+
+.overlay
+  height: 100%
+  width: 100%
+  position: absolute
+  top: 0px
+  left: 0px
+  z-index: 3
+  background: black
+  opacity: 0.6
+
 .header_title_image
   padding-top: 20%
   padding-bottom: 10%
   position: relative
-  z-index: 2
+  z-index: 4
 
 .hero-block
   padding: $hero-block-section-padding-medium
@@ -150,13 +141,13 @@ nav
   color: white
   font-family: Lato
   position: relative
-  z-index: 2
+  z-index: 4
 
 .subheading_part2
   color: #83aa81
   font-family: Lato
   position: relative
-  z-index: 2
+  z-index: 4
 
 .avocado
   padding: $section-padding-medium

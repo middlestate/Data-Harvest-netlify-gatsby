@@ -24,6 +24,7 @@ const HomePageTemplate = ({
     <section className='hero section'>
       <div className='hero-video'>
         <div className='is-hidden-mobile'>
+          <div className='overlay' />
           <video playsInline autoPlay muted loop poster=''>
             <source src={dataharvest_hero} type='video/mp4' />
           </video>
