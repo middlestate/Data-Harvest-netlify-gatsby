@@ -7,6 +7,14 @@ import ArticlePreview from './preview-templates/ArticlePreview'
 import PricingPagePreview from './preview-templates/PricingPagePreview'
 import ContactPagePreview from './preview-templates/ContactPagePreview'
 
+/* Gallery Image Pages */
+import FirstBlockLedgerPagePreview from './preview-templates/FirstBlockLedgerPagePreview'
+import SecurityPagePreview from './preview-templates/SecurityPagePreview'
+import LaborCommunicationsPagePreview from './preview-templates/LaborCommunicationsPagePreview'
+import SanCredosPagePreview from './preview-templates/SanCredosPagePreview'
+import PrimeGloryPagePreview from './preview-templates/PrimeGloryPagePreview'
+import AvipPagePreview from './preview-templates/AvipPagePreview'
+
 CMS.registerPreviewStyle('/styles.css')
 CMS.registerPreviewTemplate('home', HomePagePreview)
 CMS.registerPreviewTemplate('about', AboutPagePreview)
@@ -14,3 +22,10 @@ CMS.registerPreviewTemplate('project', ProjectPagePreview)
 CMS.registerPreviewTemplate('pricing', PricingPagePreview)
 CMS.registerPreviewTemplate('contact', ContactPagePreview)
 CMS.registerPreviewTemplate('blog', ArticlePreview)
+
+CMS.registerPreviewTemplate('firstblockledger', FirstBlockLedgerPagePreview)
+CMS.registerPreviewTemplate('security', SecurityPagePreview)
+CMS.registerPreviewTemplate('laborcommunications', LaborCommunicationsPagePreview)
+CMS.registerPreviewTemplate('sancredos', SanCredosPagePreview)
+CMS.registerPreviewTemplate('primeglory', PrimeGloryPagePreview)
+CMS.registerPreviewTemplate('avip', AvipPagePreview)

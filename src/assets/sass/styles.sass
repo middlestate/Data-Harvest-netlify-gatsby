@@ -7,6 +7,37 @@ $hero-block-section-padding-medium: 6rem 1.5rem
 $project-features-section-padding-large: 36rem 3rem
 $project-hero-section-padding-medium: 12rem 1.5rem
 $lifecycle-section-padding-medium: 6rem 1.5rem
+$about-section-padding-medium: 16rem 1.5rem
+
+html
+  scroll-behavior: smooth
+
+.hero-video video
+  position: relative
+  left: auto
+  top: auto
+  transform: none
+  width: 100vw
+  background-size: cover
+  z-index: -100
+
+.hurricane-maria
+  position: relative
+  top: auto
+  left: auto
+  height: 100%
+  width: 100%
+  z-index: -100
+
+
+.maria-container
+  position: absolute
+  top: 0
+  left: 0
+  height: 100%
+  width: 100%
+  filter: opacity(1)
+  z-index: -100
 
 .email_button
   position: fixed
@@ -169,6 +200,10 @@ nav
 
 .affiliates
   background-color: darkgray
+  .column
+    display: flex
+    align-items: center
+    justify-content: center
 
 .spotlight
   padding: $section-padding-medium
@@ -233,7 +268,7 @@ nav
     max-width: fit-content
     width: auto
   .column
-    height: 200vh
+    height: 220vh
   .img-col
     background-color: gray
     padding: 0
@@ -242,7 +277,7 @@ nav
       width: 100%
       height: 100%
   .description-col
-    padding: $section-padding-medium
+    padding: $about-section-padding-medium
     padding-left: 50px
     padding-right: 50px
     h1
@@ -405,13 +440,40 @@ nav
       color: white
       z-index: 1
     .gallery_image
-      opacity: 0.65    
+      opacity: 0.65
+
+.project_title_link
+  color: white !important
+
+.project_title_link:hover
+  color: white !important
 
 .gallery_image
   height: 100%
   width: 100%
   transition: .25s ease
 
+/* Gallery Image Page */
+.project_hero
+  padding: $project-hero-section-padding-medium
+
+.project_title
+  text-align: center
+  font-family: Lato
+  font-size: 40px
+  font-weight: bold
+  color: #ffffff
+  position: relative
+  top: 125px
+
+.project_description_container
+  padding: 50px 100px
+
+.project_description
+  color: #777777
+  font-size: 16px
+  font-family: Lato
+  margin: 0px 0px 60px
 
 
 

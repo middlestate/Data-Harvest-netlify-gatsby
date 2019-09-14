@@ -1,17 +1,24 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import {Link} from 'gatsby'
 
 const Gallery = ({ gridItems }, keys) => {
   return (
     <div className='gallery'>
       <div className='container'>
         <div className='columns is-multiline'>
-          {gridItems.map(({ image, project_title }, keys) => {
+          {gridItems.map(({ image, project_title, url }, keys) => {
             return (
               <div key={keys} className='column is-4'>
-                <h1>{project_title}</h1>
+                <h1>
+                  <Link to={url} className='project_title_link'>
+                    {project_title}
+                  </Link>
+                </h1>
                 <div className='image_container'>
-                  <img src={image} className='gallery_image' alt='project image' />
+                  <Link to={url}>
+                    <img src={image} className='gallery_image' alt='project image' />
+                  </Link>
                 </div>
               </div>
             )
@@ -27,6 +34,7 @@ Gallery.propTypes = {
     PropTypes.shape({
       image: PropTypes.string,
       project_title: PropTypes.string,
+      url: PropTypes.string,
     })
   ),
 }
