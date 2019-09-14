@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {Link} from 'gatsby'
+import { Link } from 'gatsby'
 import dataharvest_hero from '../../assets/img/dataharvest_hero.mp4'
 
 const HomePageTemplate = ({
@@ -21,26 +21,29 @@ const HomePageTemplate = ({
   spotlight_description,
 }) => (
   <div>
-    <section className='hero section'>
-      <div className='hero is-fullheight'>
-        <div className='hero-video'>
-          <div className='is-hidden-mobile'>
-            <video playsInline autoPlay muted loop poster=''>
-              <source src={dataharvest_hero} type='video/mp4' />
-            </video>
-          </div>
+    <section className='section hero is-fullheight' style={{ backgroundColor: 'rgba(0,0,0,.8)' }}>
+      <div className='hero-head hero-video'>
+        <div className='is-hidden-mobile'>
+          <video playsInline autoPlay muted loop poster=''>
+            <source
+              src='https://github.com/middlestate/Data-Harvest-netlify-gatsby/blob/master/src/assets/img/dataharvest_hero.mp4?raw=true'
+              type='video/mp4'
+            />
+          </video>
         </div>
       </div>
-      <div className='container'>
-        <div className='columns'>
-          <div className='column'>
-            <img src={header_title_image} className='header_title_image' alt='header_title_image' />
-            <p className='subheading_part1'>
-              {subheading_part1}
-              <strong className='subheading_part2'>{' ' + subheading_part2}</strong>
-            </p>
+      <div className='hero-body'>
+        <div className='container'>
+          <div className='columns'>
+            <div className='column'>
+              <img src={header_title_image} className='header_title_image' alt='header_title_image' />
+              <p className='subheading_part1'>
+                {subheading_part1}
+                <strong className='subheading_part2'>{' ' + subheading_part2}</strong>
+              </p>
+            </div>
+            <div className='column' />
           </div>
-          <div className='column' />
         </div>
       </div>
     </section>
