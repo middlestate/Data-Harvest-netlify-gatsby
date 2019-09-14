@@ -30,15 +30,17 @@ intel_image: /img/university_of_california-_riverside_logo.svg
 hyperledger_image: /img/purechex_logo4-02.png
 IBM_image: /img/nclouds-logo.svg
 linux_image: /img/gate.cl-sm.png
-spotlight_image: /img/avocado_tree.png
-spotlight_heading: 'DataHarvest Spotlight: On The Farm'
-spotlight_subheading: Answering the question of ‘how?’ on the nursery
+spotlight_image: /img/purechex_logo4-02.png
+spotlight_heading: 'DataHarvest Spotlight: PureChex Smart Labels '
+spotlight_subheading: Answering the question of ‘how?’ blockchain in the food system
 spotlight_description: >-
-  Collecting meaningful data from the nursery is critical to our project. We are
-  working with partner nurseries and technology providers to implement
-  best-in-industry network solutions that will be foundation as we expand what
-  data we are capturing. Would you like to work with us, or do you have
-  questions about our project?
+  We are telling the story of the producers and the products.  Capturing the
+  story of the product told by the people that make it.  Attaching that story to
+  the product and allowing people to add to the richness of that story. 
+  DataHarvest, along with our partners have developed a smart label that
+  uniquely pairs blockchain with the foodchain.  Our open and ground up approach
+  provided an important option for those looking to use blockchains in their
+  business.
 footer_background_color: '#83aa81'
 ---
 
