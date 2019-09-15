@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {Link} from 'gatsby'
-import dataharvest_hero from '../../assets/img/dataharvest-pah.mp4'
+// import dataharvest_hero from '../../assets/img/dataharvest-pah.mp4'
 
 const HomePageTemplate = ({
   header_title_image,
@@ -26,7 +26,7 @@ const HomePageTemplate = ({
         <div className='is-hidden-mobile'>
           <div className='overlay' />
           <video playsInline autoPlay muted loop poster='' style={{zIndex: -100}}>
-            <source src={dataharvest_hero} type='video/mp4' />
+            <source src='https://github.com/middlestate/Data-Harvest-netlify-gatsby/blob/54b1d7b81e828f023127874b7890e0b478ad1c62/src/assets/img/dataharvest-pah.mp4?raw=true' type='video/mp4' />
           </video>
         </div>
       </div>
