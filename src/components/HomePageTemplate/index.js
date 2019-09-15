@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {Link} from 'gatsby'
-import dataharvest_hero from '../../assets/img/dataharvest_hero.mp4'
+import dataharvest_hero from '../../assets/img/dataharvest-pah.mp4'
 
 const HomePageTemplate = ({
   header_title_image,
@@ -25,7 +25,7 @@ const HomePageTemplate = ({
       <div className='hero-video'>
         <div className='is-hidden-mobile'>
           <div className='overlay' />
-          <video playsInline autoPlay muted loop poster=''>
+          <video playsInline autoPlay muted loop poster='' style={{zIndex: -100}}>
             <source src={dataharvest_hero} type='video/mp4' />
           </video>
         </div>
