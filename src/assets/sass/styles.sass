@@ -51,6 +51,11 @@ nav
   border-bottom: lightgray solid 0.1vmin
 
 .navbar
+  .navbar-burger
+    background: transparent
+    border: none
+  .navbar-burger:hover
+    cursor: pointer
   .navbar-item
     font-size: 13px
     font-family: Lato
@@ -477,7 +482,9 @@ nav
 
 
 
-@media only screen and (min-width: 200px)
+@media only screen and (min-width: 200px) and (max-width: 425px)
+  .navbar-item
+    color: black !important
   .project-page
     h1
       font-size: 28px
@@ -486,9 +493,10 @@ nav
     .features_title
       font-size: 28px
 
-@media only screen and (min-width: 600px)
+@media only screen and (min-width: 426px)
   .navbar
     padding: 0 150px 0 100px
+    color: white
 
   .project
     h1
