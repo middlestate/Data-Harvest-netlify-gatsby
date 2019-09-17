@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import {Link} from 'gatsby'
 // import dataharvest_hero from '../../assets/img/dataharvest-pah.mp4'
 
+/* new branch - fully-responsive */
+
 const HomePageTemplate = ({
   header_title_image,
   subheading_part1,
