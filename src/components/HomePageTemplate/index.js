@@ -24,9 +24,19 @@ const HomePageTemplate = ({
 }) => (
   <div>
     <section className='hero section'>
-      <div className='hero-video'>
+      <div className='hero-video' style={{bottom: 'inherit'}}>
         <div className='is-hidden-mobile'>
-          <div className='overlay' />
+          {/** <div className='overlay' />  */}
+          <div style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            height: '100%',
+            width: '100%',
+            backgroundColor: 'rgba(0,0,0,.5)',
+            zIndex: 1,
+          }}
+          />
           <video playsInline autoPlay muted loop poster='' style={{zIndex: -100}}>
             <source src='https://github.com/middlestate/Data-Harvest-netlify-gatsby/blob/54b1d7b81e828f023127874b7890e0b478ad1c62/src/assets/img/dataharvest-pah.mp4?raw=true' type='video/mp4' />
           </video>
