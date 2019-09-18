@@ -45,7 +45,7 @@ const HomePageTemplate = ({
         </div>
       </div>
     </section>
-    <section className='hero-block section' />
+    {/** <section className='hero-block section' /> */}
     <section className='avocado section'>
       <div className='container'>
         <div className='columns'>
