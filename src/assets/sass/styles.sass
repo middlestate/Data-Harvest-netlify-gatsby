@@ -520,7 +520,13 @@ nav
         position: absolute
         top: 50%
         left: 50%
+        font-size: 30px
         transform: translate(-50%, -50%)
+        z-index: 1
+
+  .gallery_image
+    background-color: rgb(22,22,22)
+    opacity: 0.6
 
 @media only screen and (min-width: 426px)
   .navbar
@@ -565,6 +571,22 @@ nav
   .footer
     img
       padding: 5% 30% 5% 30%
+
+  .gallery
+    .column
+      position: relative
+      h1
+        visibility: visible
+        position: absolute
+        top: 50%
+        left: 50%
+        font-size: 30px
+        transform: translate(-50%, -50%)
+        z-index: 1
+
+  .gallery_image
+    background-color: rgb(22,22,22)
+    opacity: 0.6
 
 @media only screen and (min-width: 768px) and (max-width: 1024px)
   .hero
@@ -616,7 +638,7 @@ nav
   .gallery
     .column
       h1
-        font-size: 25px
+        font-size: 23px
         position: relative
         visibility: hidden
         z-index: 0
