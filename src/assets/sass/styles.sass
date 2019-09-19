@@ -54,6 +54,9 @@ nav
   .navbar-burger
     background: transparent
     border: none
+    color: #83aa81
+  .navbar-burger span
+    height: 2px
   .navbar-burger:hover
     cursor: pointer
   .navbar-item
@@ -487,8 +490,11 @@ nav
 
 
 @media only screen and (min-width: 200px) and (max-width: 425px)
-  // .hero
-  //   background-image: url('./static/img/hero_image_background.png')
+  .hero
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),url('../img/hero_image_background.png')
+    background-size: cover
+    padding-left: 10%
+    padding-right: 10%
 
   .navbar-item
     color: black !important
@@ -520,6 +526,13 @@ nav
   .features
     .features_title
       font-size: 48px
+
+@media only screen and (min-width: 426px) and (max-width: 767px)
+  .hero
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),url('../img/hero_image_background.png')
+    background-size: cover
+    padding-left: 20%
+    padding-right: 20%
 
 @media only screen and (min-width: 768px) and (max-width: 1024px)
   .hero
