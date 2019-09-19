@@ -445,18 +445,6 @@ nav
   .column
     h1
       font-size: 18px
-      position: relative
-      top: 70%
-      visibility: hidden
-      z-index: 0
-.gallery
-  .column:hover
-    h1
-      visibility: visible
-      color: white
-      z-index: 1
-    .gallery_image
-      opacity: 0.65
 
 .project_title_link
   color: white !important
@@ -523,7 +511,16 @@ nav
   .footer
     img
       padding: 5% 20% 5% 20%
-    
+
+  .gallery
+    .column
+      position: relative
+      h1
+        visibility: visible
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
 
 @media only screen and (min-width: 426px)
   .navbar
@@ -560,6 +557,11 @@ nav
     .img-col
       height: 100vh
 
+  .gallery
+    .column
+      h1
+        visibility: visible
+
   .footer
     img
       padding: 5% 30% 5% 30%
@@ -577,6 +579,23 @@ nav
   .about
     .img-col
       height: 247vh
+
+  .gallery
+    .column
+      h1
+        position: relative
+        visibility: hidden
+        z-index: 0
+
+  .gallery
+    .column:hover
+      h1
+        visibility: visible
+        color: white
+        top: 70%
+        z-index: 1
+      .gallery_image
+        opacity: 0.65
 
   .footer
     img
@@ -598,3 +617,16 @@ nav
     .column
       h1
         font-size: 25px
+        position: relative
+        visibility: hidden
+        z-index: 0
+
+  .gallery
+    .column:hover
+      h1
+        visibility: visible
+        color: white
+        top: 70%
+        z-index: 1
+      .gallery_image
+        opacity: 0.65
