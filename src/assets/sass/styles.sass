@@ -19,6 +19,7 @@ html
   padding: 10px
   background-color: rgba(0,0,0,0.5)
   transition: all .15s ease-in-out
+  z-index: 2
   .fontawesome_icon
     width: 20px
     height: 20px
@@ -35,6 +36,7 @@ html
   padding: 10px
   background-color: rgba(0,0,0,0.5)
   transition: all .15s ease-in-out
+  z-index: 2
   .fontawesome_icon
     width: 20px
     height: 20px
@@ -237,7 +239,6 @@ nav
   h2
     letter-spacing: 0px
     text-transform: none
-    font-size: 36px
     color: white
     text-align: left
     font-family: Lato
@@ -504,8 +505,9 @@ nav
     .features_title
       font-size: 28px
 
-  .avocado h2
+  .avocado h2, .spotlight h2
     font-size: 26px
+    
 
 @media only screen and (min-width: 426px)
   .navbar
@@ -535,7 +537,7 @@ nav
     padding-left: 20%
     padding-right: 20%
 
-  .avocado h2
+  .avocado h2, .spotlight h2
       font-size: 26px
 
 @media only screen and (min-width: 768px) and (max-width: 1024px)
@@ -545,9 +547,9 @@ nav
   .avocado
     padding: 100px
 
-  .avocado h2
+  .avocado h2, .spotlight h2
     font-size: 30px  
 
 @media only screen and (min-width: 1024px)
-  .avocado h2
+  .avocado h2, .spotlight h2
     font-size: 36px
