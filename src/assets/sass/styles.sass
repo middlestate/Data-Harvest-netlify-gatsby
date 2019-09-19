@@ -2,7 +2,7 @@
 
 $primary: #00d1b2
 $primary-invert: #ffffff
-$hero-section-padding-large: 6rem 1.5rem
+$hero-section-padding-large: 16rem 1.5rem
 $hero-block-section-padding-medium: 10rem 1.5rem
 $project-features-section-padding-large: 36rem 3rem
 $project-hero-section-padding-medium: 12rem 1.5rem
@@ -109,7 +109,7 @@ nav
 
 /* Home Page */
 .hero
-  padding: $hero-section-padding-large
+  padding: 175px
   // background-color: gray
   opacity: 1
 
@@ -140,8 +140,10 @@ nav
   z-index: 4
 
 .hero-block
-  padding: $hero-block-section-padding-medium
   background-color: #83aa81
+  position: relative
+  z-index: 1
+  padding: 100px
 
 .subheading_part1
   color: white
@@ -156,8 +158,8 @@ nav
   z-index: 4
 
 .avocado
-  padding: $section-padding-medium
-  margin-top: 20%
+  padding: 175px
+  // margin-top: 20%
   h1
     letter-spacing: 0px
     text-transform: uppercase
@@ -511,3 +513,13 @@ nav
   .features
     .features_title
       font-size: 48px
+
+@media only screen and (min-width: 768px) and (max-width: 1024px)
+  .hero
+    padding: 100px
+
+  .hero-block
+    padding: 75px
+
+  .avocado
+    padding: 100px
