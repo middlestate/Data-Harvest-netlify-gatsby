@@ -63,7 +63,7 @@ const HomePageTemplate = ({
             <h1>{avocado_heading}</h1>
             <h2>{avocado_subheading}</h2>
             <p>{avocado_description}</p>
-            <Link to='/project'>
+            <Link to='https://www.purechex.com/'>
               <button>DataHarvest Project</button>
             </Link>
           </div>
