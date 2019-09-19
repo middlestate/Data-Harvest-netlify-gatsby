@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {Link} from 'gatsby'
+// import {Link} from 'gatsby'
 // import dataharvest_hero from '../../assets/img/dataharvest-pah.mp4'
 
 /* New branch - fully-responsive */
@@ -63,9 +63,11 @@ const HomePageTemplate = ({
             <h1>{avocado_heading}</h1>
             <h2>{avocado_subheading}</h2>
             <p>{avocado_description}</p>
-            <Link to='https://www.purechex.com/'>
+            {/** <Link to='/project'> */}
+            <a href='http://purechex.com'>
               <button>DataHarvest Project</button>
-            </Link>
+            </a>
+            {/** </Link> */}
           </div>
           <div className='column'>
             <img src={avocado_image} alt='avocado' />
